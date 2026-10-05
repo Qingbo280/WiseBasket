@@ -1,0 +1,51 @@
+WiseBasket database migrations
+==============================
+
+This folder contains Alembic migrations for the WiseBasket PostgreSQL schema.
+
+Purpose
+-------
+
+Migrations keep the database schema reproducible across local development,
+CI, Railway deployment and future handover. Each file in `versions/` is one
+ordered schema change identified by an Alembic revision ID.
+
+Current migration chain
+-----------------------
+
+1. `24ebf6c51805_create_households_table.py`
+2. `9b1c2d3e4f50_iteration_1_backend_foundation.py`
+3. `a7c9d2e1f604_db_backed_planner_integration.py`
+4. `b3f7a1c2d4e5_add_profile_data_to_user_profile.py`
+
+Usage
+-----
+
+Apply all migrations:
+
+```bash
+alembic upgrade head
+```
+
+Apply migrations through Docker:
+
+```bash
+docker compose run --rm api alembic upgrade head
+```
+
+Check current migration state:
+
+```bash
+alembic current
+alembic heads
+```
+
+Production rules
+----------------
+
+- Do not edit an already-applied migration after it has been deployed.
+- Add a new revision for schema changes.
+- Keep migrations reversible where practical.
+- Keep seed/reference data separate from schema migrations unless the data is part
+  of a required controlled reference table.
+- Test migrations in CI or locally before applying them to Railway.

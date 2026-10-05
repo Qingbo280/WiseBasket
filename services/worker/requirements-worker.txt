@@ -1,0 +1,6 @@
+# Worker-only deps (on top of root requirements.txt): daily PriceCatcher updater
+# (pandas/pyarrow read the official parquet; celery[redis] drives the beat schedule).
+celery[redis]>=5.4,<6
+pandas>=2.2,<3
+pyarrow>=17
+redis>=5

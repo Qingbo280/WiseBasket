@@ -1,0 +1,275 @@
+canonical_food_id,canonical_name,canonical_name_ms,status,note
+SF001,buffalo meat,daging kerbau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF002,beef,daging lembu,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF003,mutton/lamb with bone,daging kambing bertulang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF004,boneless mutton/lamb,daging kambing tanpa tulang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF005,lamb leg with bone,paha kambing bertulang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF006,whole chicken,ayam bersih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF007,live chicken,ayam hidup,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF008,pork belly,daging babi (perut/belly),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF009,pork (lean & fat),daging babi (daging & lemak),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF010,pork ribs,rusuk babi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF011,lean pork,daging babi (isi daging),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF012,live pig,babi hidup,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF013,chicken whole leg,whole leg ayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF014,chicken thigh,thigh ayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF015,chicken drumstick,paha ayam (drumstick),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF016,chicken wing,kepak ayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF017,chicken breast,dada ayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF018,chicken egg,telur ayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF019,salted egg,telur masin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF020,duck egg,telur itik,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF021,quail egg,telur puyuh,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF022,white prawn,udang putih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF023,red snapper,ikan jenahak / ikan merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF024,spanish mackerel,ikan tenggiri,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF025,indian mackerel,ikan kembung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF026,wolf herring,ikan parang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF027,yellowstripe scad,ikan selar,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF028,red snapper head,kepala ikan jenahak / ikan merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF029,round scad,ikan selayang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF030,tuskfish (demuduk),ikan demuduk,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF031,snakehead fish,ikan haruan,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF032,white pomfret,ikan bawal putih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF033,grouper,ikan kerapu,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF034,torpedo scad (cencaru),ikan cencaru,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF035,red tilapia,ikan tilapia merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF036,tiger prawn,udang harimau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF037,flower crab,ketam bunga,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF038,cockle,kerang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF039,threadfin bream,ikan kerisi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF040,sardinella (tamban),ikan tamban,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF041,threadfin,ikan senangin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF042,squid,sotong,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF043,barramundi (seabass),ikan siakap,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF044,skipjack tuna (tongkol),ikan tongkol,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF045,toli shad (terubok),ikan terubok,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF046,catfish,ikan keli,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF047,stingray,ikan pari,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF048,croaker (gelama),ikan gelama,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF049,black tilapia,ikan tilapia hitam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF050,black pomfret,ikan bawal hitam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF051,dried anchovy,ikan bilis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF052,dried shrimp,udang kering,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF053,dried squid,sotong kering,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF054,shallot,bawang kecil merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF055,cabbage,kubis bulat,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF056,onion,bawang besar,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF057,potato,ubi kentang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF058,red chili,cili merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF059,chinese cabbage,kubis panjang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF060,dried chili,cili kering,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF061,bird's eye chili,cili padi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF062,spinach (bayam),bayam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF063,eggplant (brinjal),terung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF064,green chili,cili hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF065,leek,bawang perai,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF066,galangal,lengkuas,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF067,french beans,kacang buncis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF068,winged bean,kacang botol,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF069,garlic,bawang putih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF070,fresh turmeric,kunyit hidup,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF071,ginger,halia,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF072,tomato,tomato,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF073,okra (lady's finger),kacang bendi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF074,water spinach,kangkung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF075,red capsicum,lada benggala merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF076,bean sprouts,tauge,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF077,carrot,lobak merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF078,kailan,kailan,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF079,cauliflower,kubis bunga,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF080,celery,saderi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF081,mustard greens,sawi hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF082,broccoli,brokoli,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF083,calamansi lime,limau kasturi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF084,long beans,kacang panjang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF085,green capsicum,lada benggala hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF086,yellow capsicum,lada benggala kuning,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF087,cucumber,timun,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF088,guava,jambu batu,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF089,watermelon (red),tembikai merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF090,banana,pisang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF091,lai fruit,lai,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF092,papaya,betik,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF093,orange,oren,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF094,dragon fruit,buah naga,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF095,red apple,epal merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF096,red grapes,anggur merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF097,pineapple,nenas,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF098,lime,limau nipis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF099,green apple,epal hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF100,green grapes,anggur hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF101,honeydew melon,tembikai susu,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF102,boxed coconut milk,santan kotak,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF103,fresh coconut milk,santan kelapa segar,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF104,grated coconut,kelapa parut,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF105,coconut,kelapa,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF106,tempeh,tempe,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF107,tofu,tauhu,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF108,fresh rice noodles,kuetiau basah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF109,fresh yellow noodles,mee kuning basah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF110,rice,beras,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF111,wheat flour,tepung gandum,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF112,glutinous rice,beras pulut,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF113,basmati rice,beras basmathi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF114,corn flour,tepung jagung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF115,rice flour,tepung beras,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF116,glutinous rice flour,tepung pulut,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF117,self-raising flour,tepung naik sendiri,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF118,white sugar,gula putih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF119,palm sugar,gula merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF120,cooking oil (bottle),minyak masak (botol),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF121,corn oil,minyak jagung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF122,ghee,minyak sapi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF123,cooking oil (packet),minyak masak (paket),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF124,dhal (lentils),kacang dal,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF125,red beans,kacang merah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF126,mung beans,kacang hijau,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF127,peanuts,kacang tanah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF128,soybeans,kacang soya,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF129,soy sauce,kicap,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF130,chili sauce,sos cili,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF131,oyster sauce,sos tiram,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF132,tomato sauce,sos tomato,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF133,curry powder,serbuk kari,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF134,soup spices,rempah sup,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF135,turmeric powder,serbuk kunyit,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF136,chili powder,serbuk cili,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF137,tom yam seasoning,perencah tom yam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF138,fried rice seasoning,perencah nasi goreng,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF139,tamarind,asam jawa,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF140,cloves,bunga cengkih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF141,star anise,bunga lawang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF142,fennel seeds,jintan manis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF143,cardamom,buah pelaga,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF144,white pepper,lada putih,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF145,candlenut,buah keras,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF146,cinnamon,kulit kayu manis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF147,nutmeg,buah pala,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF148,mustard seeds,biji sawi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF149,coriander seeds,biji ketumbar,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF150,fenugreek,halba,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF151,salt,garam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF152,black pepper,lada hitam,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF153,yeast,yis / ragi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF154,baking powder,serbuk penaik,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF155,food essence,esen,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF156,canned sardine in tomato sauce,sardin dalam tin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF157,canned mackerel in tomato sauce,mackerel dalam tin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF158,canned tuna,tuna dalam tin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF159,dried rice vermicelli,bihun kering,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF160,sliced bread,roti sandwich,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF161,instant noodles (packet),mi segera (paket),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF162,cup noodles,mi segera (cawan),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF163,infant formula milk,susu formula bayi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF164,adult milk powder,susu tepung dewasa,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF165,baby food,makanan bayi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF166,sweetened condensed milk,susu pekat manis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF167,evaporated milk,susu sejat,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF168,cheese slices,keju,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF169,maternal milk powder,susu ibu mengandung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF170,butter,mentega,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF171,margarine,marjerin,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF172,peanut butter,mentega kacang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF173,kaya (coconut jam),seri kaya,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF174,jam,jem,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF175,mayonnaise,mayonis,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF176,fresh / UHT milk,susu segar,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF177,carbonated drink (can),minuman berkarbonat (tin),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF178,fruit juice drink,jus buah,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF179,carbonated drink (bottle),minuman berkarbonat (botol),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF180,yogurt,yogurt,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF181,cultured milk drink,minuman susu kultur,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF182,health drink,minuman kesihatan,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF183,cooling herbal drink,air penyejuk badan,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF184,boxed soy milk,susu soya (kotak),ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF185,energy drink,minuman tenaga,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF186,isotonic drink,minuman isotonik,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF187,ground coffee,serbuk kopi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF188,tea (leaves/bags),teh,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF189,cordial syrup,kordial,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF190,malt drink powder,milo,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF191,instant coffee,kopi segera,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF192,cereal drink (nestum),nestum,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF193,coffee creamer,krimer kopi,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF194,malted drink powder,horlicks,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF195,oats,oat,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF196,chocolate confectionery,coklat,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF197,sugar confectionery (sweets),gula-gula,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF198,biscuits,biskut,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF199,potato crisps,kerepek kentang,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF200,puffed corn snack,snek jagung,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+SF201,turkey,ayam belanda,ACTIVE,Namespace rebuild 2026-09 (foundation migration 9b1c2d3e4f50): authoritative Data-team 201 identity.
+RET-SF001,white rice (raw),,RETIRED,Pre-cutover identity of SF001. Migrated to SF110 (rice) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF002,chicken egg,,RETIRED,Pre-cutover identity of SF002. Migrated to SF018 (chicken egg) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF003,whole chicken,,RETIRED,Pre-cutover identity of SF003. Migrated to SF006 (whole chicken) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF004,dried anchovy,,RETIRED,Pre-cutover identity of SF004. Migrated to SF051 (dried anchovy) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF005,canned sardine,,RETIRED,Pre-cutover identity of SF005. Migrated to SF156 (canned sardine in tomato sauce) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF006,tofu,,RETIRED,Pre-cutover identity of SF006. Migrated to SF107 (tofu) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF007,tempeh,,RETIRED,Pre-cutover identity of SF007. Migrated to SF106 (tempeh) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF008,red lentils,,RETIRED,Pre-cutover identity of SF008. Migrated to SF124 (dhal (lentils)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF009,peanuts,,RETIRED,Pre-cutover identity of SF009. Migrated to SF127 (peanuts) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF010,water spinach,,RETIRED,Pre-cutover identity of SF010. Migrated to SF074 (water spinach) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF011,spinach,,RETIRED,Pre-cutover identity of SF011. Migrated to SF062 (spinach (bayam)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF012,cabbage,,RETIRED,Pre-cutover identity of SF012. Migrated to SF055 (cabbage) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF013,carrot,,RETIRED,Pre-cutover identity of SF013. Migrated to SF077 (carrot) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF014,long beans,,RETIRED,Pre-cutover identity of SF014. Migrated to SF084 (long beans) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF016,papaya,,RETIRED,Pre-cutover identity of SF016. Migrated to SF092 (papaya) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF018,sweet potato,,RETIRED,"Pre-cutover identity of SF018 (sweet potato). Excluded from the 201 catalogue (catalogue gap, reported to data team); identity re-established as the WiseBasket extension SF202 by the 2026-09 namespace rebuild. Never reuse this identity."
+RET-SF019,bread,,RETIRED,Pre-cutover identity of SF019. Migrated to SF160 (sliced bread) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF020,full cream milk,,RETIRED,Pre-cutover identity of SF020. Migrated to SF176 (fresh / UHT milk) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF021,palm cooking oil,,RETIRED,Pre-cutover identity of SF021. Migrated to SF120 (cooking oil (bottle)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF023,potato,,RETIRED,Pre-cutover identity of SF023. Migrated to SF057 (potato) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF024,indian mackerel,,RETIRED,Pre-cutover identity of SF024. Migrated to SF025 (indian mackerel) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF025,tomato,,RETIRED,Pre-cutover identity of SF025. Migrated to SF072 (tomato) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF026,onion,,RETIRED,Pre-cutover identity of SF026. Migrated to SF056 (onion) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF027,garlic,,RETIRED,Pre-cutover identity of SF027. Migrated to SF069 (garlic) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF028,kailan,,RETIRED,Pre-cutover identity of SF028. Migrated to SF078 (kailan) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF029,mustard greens,,RETIRED,Pre-cutover identity of SF029. Migrated to SF081 (mustard greens) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF030,bean sprouts,,RETIRED,Pre-cutover identity of SF030. Migrated to SF076 (bean sprouts) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF031,white sugar,,RETIRED,Pre-cutover identity of SF031. Migrated to SF118 (white sugar) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF033,rice flour,,RETIRED,Pre-cutover identity of SF033. Migrated to SF115 (rice flour) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF035,wheat flour,,RETIRED,Pre-cutover identity of SF035. Migrated to SF111 (banana) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF036,instant oats,,RETIRED,Pre-cutover identity of SF036. Migrated to SF195 (white prawn) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF037,instant curry noodles,,RETIRED,Pre-cutover identity of SF037. Migrated to SF161 (catfish) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF038,dried rice vermicelli (bihun),,RETIRED,Pre-cutover identity of SF038. Migrated to SF159 (dhal (lentils)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF039,wet yellow noodles,,RETIRED,Pre-cutover identity of SF039. Migrated to SF109 (wheat flour) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF040,glutinous rice,,RETIRED,Pre-cutover identity of SF040. Migrated to SF112 (butter) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF041,pork lean and fat,,RETIRED,Pre-cutover identity of SF041. Migrated to SF009 (red tilapia) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF042,local beef thigh,,RETIRED,Pre-cutover identity of SF042. Migrated to SF002 (soybeans) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF046,banana,,RETIRED,Pre-cutover identity of SF046. Migrated to SF090 (ginger) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF047,watermelon,,RETIRED,Pre-cutover identity of SF047. Migrated to SF089 (okra (lady's finger)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF050,red dragon fruit,,RETIRED,Pre-cutover identity of SF050. Migrated to SF094 (fresh coconut milk) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF052,grapes,,RETIRED,Pre-cutover identity of SF052. Migrated to SF096 (ghee) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF053,guava,,RETIRED,Pre-cutover identity of SF053. Migrated to SF088 (boneless mutton/lamb) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF073,cucumber,,RETIRED,Pre-cutover identity of SF073. Migrated to SF087 (cucumber) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF074,broccoli,,RETIRED,Pre-cutover identity of SF074. Migrated to SF082 (broccoli) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF075,galangal,,RETIRED,Pre-cutover identity of SF075. Migrated to SF066 (galangal) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF076,green chili,,RETIRED,Pre-cutover identity of SF076. Migrated to SF064 (green chili) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF079,green bell pepper,,RETIRED,Pre-cutover identity of SF079. Migrated to SF085 (green capsicum) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF080,calamansi lime,,RETIRED,Pre-cutover identity of SF080. Migrated to SF083 (calamansi lime) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF083,round eggplant,,RETIRED,Pre-cutover identity of SF083. Migrated to SF063 (eggplant (brinjal)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF084,shallot,,RETIRED,Pre-cutover identity of SF084. Migrated to SF054 (shallot) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF085,grated coconut,,RETIRED,Pre-cutover identity of SF085. Migrated to SF104 (grated coconut) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF086,seedless tamarind,,RETIRED,Pre-cutover identity of SF086. Migrated to SF139 (tamarind) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF087,bird's eye chili,,RETIRED,Pre-cutover identity of SF087. Migrated to SF061 (bird's eye chili) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF088,brown sugar,,RETIRED,Pre-cutover identity of SF088. Migrated to SF119 (palm sugar) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF049,honeydew melon,,RETIRED,Pre-cutover identity of SF049. Migrated to SF101 (honeydew melon) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF055,lime,,RETIRED,Pre-cutover identity of SF055. Migrated to SF098 (lime) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF056,table salt,,RETIRED,Pre-cutover identity of SF056. Migrated to SF151 (salt) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF057,sweet soy sauce,,RETIRED,Pre-cutover identity of SF057. Migrated to SF129 (soy sauce) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF058,chili sauce,,RETIRED,Pre-cutover identity of SF058. Migrated to SF130 (chili sauce) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF059,tomato sauce,,RETIRED,Pre-cutover identity of SF059. Migrated to SF132 (tomato sauce) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF060,fresh coconut milk,,RETIRED,Pre-cutover identity of SF060. Migrated to SF103 (fresh coconut milk) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF061,margarine,,RETIRED,Pre-cutover identity of SF061. Migrated to SF171 (margarine) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF062,instant whole milk powder,,RETIRED,Pre-cutover identity of SF062. Migrated to SF164 (adult milk powder) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF064,sweetened vitamin creamer,,RETIRED,Pre-cutover identity of SF064. Migrated to SF166 (sweetened condensed milk) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF065,kuey teow,,RETIRED,Pre-cutover identity of SF065. Migrated to SF108 (fresh rice noodles) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF066,okra,,RETIRED,Pre-cutover identity of SF066. Migrated to SF073 (okra (lady's finger)) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF067,pineapple,,RETIRED,Pre-cutover identity of SF067. Migrated to SF097 (pineapple) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF068,orange,,RETIRED,Pre-cutover identity of SF068. Migrated to SF093 (orange) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF069,apple,,RETIRED,Pre-cutover identity of SF069. Migrated to SF095 (red apple) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF070,lai,,RETIRED,Pre-cutover identity of SF070. Migrated to SF091 (lai fruit) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF071,oyster sauce,,RETIRED,Pre-cutover identity of SF071. Migrated to SF131 (oyster sauce) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+RET-SF072,curry powder,,RETIRED,Pre-cutover identity of SF072. Migrated to SF133 (curry powder) by crosswalk_v2 (namespace rebuild 2026-09). Never reuse this identity.
+SF202,sweet potato,keledek,ACTIVE,"WiseBasket extension 2026-09 (foundation migration 9b1c2d3e4f50, addon JSON): carried over from pre-rebuild SF018; Data-team catalogue gap reported."

@@ -1,0 +1,2012 @@
+[
+  {
+    "canonical_food_id": "SF001",
+    "canonical_name": "buffalo meat",
+    "canonical_name_ms": "daging kerbau",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF002",
+    "canonical_name": "beef",
+    "canonical_name_ms": "daging lembu",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF003",
+    "canonical_name": "mutton/lamb with bone",
+    "canonical_name_ms": "daging kambing bertulang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF004",
+    "canonical_name": "boneless mutton/lamb",
+    "canonical_name_ms": "daging kambing tanpa tulang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF005",
+    "canonical_name": "lamb leg with bone",
+    "canonical_name_ms": "paha kambing bertulang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF006",
+    "canonical_name": "whole chicken",
+    "canonical_name_ms": "ayam bersih",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF007",
+    "canonical_name": "live chicken",
+    "canonical_name_ms": "ayam hidup",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF008",
+    "canonical_name": "pork belly",
+    "canonical_name_ms": "daging babi (perut/belly)",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF009",
+    "canonical_name": "pork (lean & fat)",
+    "canonical_name_ms": "daging babi (daging & lemak)",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF010",
+    "canonical_name": "pork ribs",
+    "canonical_name_ms": "rusuk babi",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF011",
+    "canonical_name": "lean pork",
+    "canonical_name_ms": "daging babi (isi daging)",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF012",
+    "canonical_name": "live pig",
+    "canonical_name_ms": "babi hidup",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF013",
+    "canonical_name": "chicken whole leg",
+    "canonical_name_ms": "whole leg ayam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF014",
+    "canonical_name": "chicken thigh",
+    "canonical_name_ms": "thigh ayam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF015",
+    "canonical_name": "chicken drumstick",
+    "canonical_name_ms": "paha ayam (drumstick)",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF016",
+    "canonical_name": "chicken wing",
+    "canonical_name_ms": "kepak ayam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF017",
+    "canonical_name": "chicken breast",
+    "canonical_name_ms": "dada ayam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF018",
+    "canonical_name": "chicken egg",
+    "canonical_name_ms": "telur ayam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF019",
+    "canonical_name": "salted egg",
+    "canonical_name_ms": "telur masin",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF020",
+    "canonical_name": "duck egg",
+    "canonical_name_ms": "telur itik",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF021",
+    "canonical_name": "quail egg",
+    "canonical_name_ms": "telur puyuh",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF022",
+    "canonical_name": "white prawn",
+    "canonical_name_ms": "udang putih",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF023",
+    "canonical_name": "red snapper",
+    "canonical_name_ms": "ikan jenahak / ikan merah",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF024",
+    "canonical_name": "spanish mackerel",
+    "canonical_name_ms": "ikan tenggiri",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF025",
+    "canonical_name": "indian mackerel",
+    "canonical_name_ms": "ikan kembung",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF026",
+    "canonical_name": "wolf herring",
+    "canonical_name_ms": "ikan parang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF027",
+    "canonical_name": "yellowstripe scad",
+    "canonical_name_ms": "ikan selar",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF028",
+    "canonical_name": "red snapper head",
+    "canonical_name_ms": "kepala ikan jenahak / ikan merah",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF029",
+    "canonical_name": "round scad",
+    "canonical_name_ms": "ikan selayang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF030",
+    "canonical_name": "tuskfish (demuduk)",
+    "canonical_name_ms": "ikan demuduk",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF031",
+    "canonical_name": "snakehead fish",
+    "canonical_name_ms": "ikan haruan",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF032",
+    "canonical_name": "white pomfret",
+    "canonical_name_ms": "ikan bawal putih",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF033",
+    "canonical_name": "grouper",
+    "canonical_name_ms": "ikan kerapu",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF034",
+    "canonical_name": "torpedo scad (cencaru)",
+    "canonical_name_ms": "ikan cencaru",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF035",
+    "canonical_name": "red tilapia",
+    "canonical_name_ms": "ikan tilapia merah",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF036",
+    "canonical_name": "tiger prawn",
+    "canonical_name_ms": "udang harimau",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF037",
+    "canonical_name": "flower crab",
+    "canonical_name_ms": "ketam bunga",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF038",
+    "canonical_name": "cockle",
+    "canonical_name_ms": "kerang",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF039",
+    "canonical_name": "threadfin bream",
+    "canonical_name_ms": "ikan kerisi",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF040",
+    "canonical_name": "sardinella (tamban)",
+    "canonical_name_ms": "ikan tamban",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF041",
+    "canonical_name": "threadfin",
+    "canonical_name_ms": "ikan senangin",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF042",
+    "canonical_name": "squid",
+    "canonical_name_ms": "sotong",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF043",
+    "canonical_name": "barramundi (seabass)",
+    "canonical_name_ms": "ikan siakap",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF044",
+    "canonical_name": "skipjack tuna (tongkol)",
+    "canonical_name_ms": "ikan tongkol",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF045",
+    "canonical_name": "toli shad (terubok)",
+    "canonical_name_ms": "ikan terubok",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF046",
+    "canonical_name": "catfish",
+    "canonical_name_ms": "ikan keli",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF047",
+    "canonical_name": "stingray",
+    "canonical_name_ms": "ikan pari",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF048",
+    "canonical_name": "croaker (gelama)",
+    "canonical_name_ms": "ikan gelama",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF049",
+    "canonical_name": "black tilapia",
+    "canonical_name_ms": "ikan tilapia hitam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF050",
+    "canonical_name": "black pomfret",
+    "canonical_name_ms": "ikan bawal hitam",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF051",
+    "canonical_name": "dried anchovy",
+    "canonical_name_ms": "ikan bilis",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF052",
+    "canonical_name": "dried shrimp",
+    "canonical_name_ms": "udang kering",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF053",
+    "canonical_name": "dried squid",
+    "canonical_name_ms": "sotong kering",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF054",
+    "canonical_name": "shallot",
+    "canonical_name_ms": "bawang kecil merah",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF055",
+    "canonical_name": "cabbage",
+    "canonical_name_ms": "kubis bulat",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF056",
+    "canonical_name": "onion",
+    "canonical_name_ms": "bawang besar",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF057",
+    "canonical_name": "potato",
+    "canonical_name_ms": "ubi kentang",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF058",
+    "canonical_name": "red chili",
+    "canonical_name_ms": "cili merah",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF059",
+    "canonical_name": "chinese cabbage",
+    "canonical_name_ms": "kubis panjang",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF060",
+    "canonical_name": "dried chili",
+    "canonical_name_ms": "cili kering",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF061",
+    "canonical_name": "bird's eye chili",
+    "canonical_name_ms": "cili padi",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF062",
+    "canonical_name": "spinach (bayam)",
+    "canonical_name_ms": "bayam",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF063",
+    "canonical_name": "eggplant (brinjal)",
+    "canonical_name_ms": "terung",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF064",
+    "canonical_name": "green chili",
+    "canonical_name_ms": "cili hijau",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF065",
+    "canonical_name": "leek",
+    "canonical_name_ms": "bawang perai",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF066",
+    "canonical_name": "galangal",
+    "canonical_name_ms": "lengkuas",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF067",
+    "canonical_name": "french beans",
+    "canonical_name_ms": "kacang buncis",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF068",
+    "canonical_name": "winged bean",
+    "canonical_name_ms": "kacang botol",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF069",
+    "canonical_name": "garlic",
+    "canonical_name_ms": "bawang putih",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF070",
+    "canonical_name": "fresh turmeric",
+    "canonical_name_ms": "kunyit hidup",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF071",
+    "canonical_name": "ginger",
+    "canonical_name_ms": "halia",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF072",
+    "canonical_name": "tomato",
+    "canonical_name_ms": "tomato",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF073",
+    "canonical_name": "okra (lady's finger)",
+    "canonical_name_ms": "kacang bendi",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF074",
+    "canonical_name": "water spinach",
+    "canonical_name_ms": "kangkung",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF075",
+    "canonical_name": "red capsicum",
+    "canonical_name_ms": "lada benggala merah",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF076",
+    "canonical_name": "bean sprouts",
+    "canonical_name_ms": "tauge",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF077",
+    "canonical_name": "carrot",
+    "canonical_name_ms": "lobak merah",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF078",
+    "canonical_name": "kailan",
+    "canonical_name_ms": "kailan",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF079",
+    "canonical_name": "cauliflower",
+    "canonical_name_ms": "kubis bunga",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF080",
+    "canonical_name": "celery",
+    "canonical_name_ms": "saderi",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF081",
+    "canonical_name": "mustard greens",
+    "canonical_name_ms": "sawi hijau",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF082",
+    "canonical_name": "broccoli",
+    "canonical_name_ms": "brokoli",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF083",
+    "canonical_name": "calamansi lime",
+    "canonical_name_ms": "limau kasturi",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF084",
+    "canonical_name": "long beans",
+    "canonical_name_ms": "kacang panjang",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF085",
+    "canonical_name": "green capsicum",
+    "canonical_name_ms": "lada benggala hijau",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF086",
+    "canonical_name": "yellow capsicum",
+    "canonical_name_ms": "lada benggala kuning",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF087",
+    "canonical_name": "cucumber",
+    "canonical_name_ms": "timun",
+    "category": "vegetables",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF088",
+    "canonical_name": "guava",
+    "canonical_name_ms": "jambu batu",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF089",
+    "canonical_name": "watermelon (red)",
+    "canonical_name_ms": "tembikai merah",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF090",
+    "canonical_name": "banana",
+    "canonical_name_ms": "pisang",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF091",
+    "canonical_name": "lai fruit",
+    "canonical_name_ms": "lai",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF092",
+    "canonical_name": "papaya",
+    "canonical_name_ms": "betik",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF093",
+    "canonical_name": "orange",
+    "canonical_name_ms": "oren",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF094",
+    "canonical_name": "dragon fruit",
+    "canonical_name_ms": "buah naga",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF095",
+    "canonical_name": "red apple",
+    "canonical_name_ms": "epal merah",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF096",
+    "canonical_name": "red grapes",
+    "canonical_name_ms": "anggur merah",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF097",
+    "canonical_name": "pineapple",
+    "canonical_name_ms": "nenas",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF098",
+    "canonical_name": "lime",
+    "canonical_name_ms": "limau nipis",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF099",
+    "canonical_name": "green apple",
+    "canonical_name_ms": "epal hijau",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF100",
+    "canonical_name": "green grapes",
+    "canonical_name_ms": "anggur hijau",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF101",
+    "canonical_name": "honeydew melon",
+    "canonical_name_ms": "tembikai susu",
+    "category": "fruit",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF102",
+    "canonical_name": "boxed coconut milk",
+    "canonical_name_ms": "santan kotak",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF103",
+    "canonical_name": "fresh coconut milk",
+    "canonical_name_ms": "santan kelapa segar",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF104",
+    "canonical_name": "grated coconut",
+    "canonical_name_ms": "kelapa parut",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF105",
+    "canonical_name": "coconut",
+    "canonical_name_ms": "kelapa",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF106",
+    "canonical_name": "tempeh",
+    "canonical_name_ms": "tempe",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF107",
+    "canonical_name": "tofu",
+    "canonical_name_ms": "tauhu",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF108",
+    "canonical_name": "fresh rice noodles",
+    "canonical_name_ms": "kuetiau basah",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF109",
+    "canonical_name": "fresh yellow noodles",
+    "canonical_name_ms": "mee kuning basah",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF110",
+    "canonical_name": "rice",
+    "canonical_name_ms": "beras",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF111",
+    "canonical_name": "wheat flour",
+    "canonical_name_ms": "tepung gandum",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF112",
+    "canonical_name": "glutinous rice",
+    "canonical_name_ms": "beras pulut",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF113",
+    "canonical_name": "basmati rice",
+    "canonical_name_ms": "beras basmathi",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF114",
+    "canonical_name": "corn flour",
+    "canonical_name_ms": "tepung jagung",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF115",
+    "canonical_name": "rice flour",
+    "canonical_name_ms": "tepung beras",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF116",
+    "canonical_name": "glutinous rice flour",
+    "canonical_name_ms": "tepung pulut",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF117",
+    "canonical_name": "self-raising flour",
+    "canonical_name_ms": "tepung naik sendiri",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF118",
+    "canonical_name": "white sugar",
+    "canonical_name_ms": "gula putih",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF119",
+    "canonical_name": "palm sugar",
+    "canonical_name_ms": "gula merah",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF120",
+    "canonical_name": "cooking oil (bottle)",
+    "canonical_name_ms": "minyak masak (botol)",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF121",
+    "canonical_name": "corn oil",
+    "canonical_name_ms": "minyak jagung",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF122",
+    "canonical_name": "ghee",
+    "canonical_name_ms": "minyak sapi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF123",
+    "canonical_name": "cooking oil (packet)",
+    "canonical_name_ms": "minyak masak (paket)",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF124",
+    "canonical_name": "dhal (lentils)",
+    "canonical_name_ms": "kacang dal",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF125",
+    "canonical_name": "red beans",
+    "canonical_name_ms": "kacang merah",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF126",
+    "canonical_name": "mung beans",
+    "canonical_name_ms": "kacang hijau",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF127",
+    "canonical_name": "peanuts",
+    "canonical_name_ms": "kacang tanah",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF128",
+    "canonical_name": "soybeans",
+    "canonical_name_ms": "kacang soya",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF129",
+    "canonical_name": "soy sauce",
+    "canonical_name_ms": "kicap",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF130",
+    "canonical_name": "chili sauce",
+    "canonical_name_ms": "sos cili",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF131",
+    "canonical_name": "oyster sauce",
+    "canonical_name_ms": "sos tiram",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF132",
+    "canonical_name": "tomato sauce",
+    "canonical_name_ms": "sos tomato",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF133",
+    "canonical_name": "curry powder",
+    "canonical_name_ms": "serbuk kari",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF134",
+    "canonical_name": "soup spices",
+    "canonical_name_ms": "rempah sup",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF135",
+    "canonical_name": "turmeric powder",
+    "canonical_name_ms": "serbuk kunyit",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF136",
+    "canonical_name": "chili powder",
+    "canonical_name_ms": "serbuk cili",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF137",
+    "canonical_name": "tom yam seasoning",
+    "canonical_name_ms": "perencah tom yam",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF138",
+    "canonical_name": "fried rice seasoning",
+    "canonical_name_ms": "perencah nasi goreng",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF139",
+    "canonical_name": "tamarind",
+    "canonical_name_ms": "asam jawa",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF140",
+    "canonical_name": "cloves",
+    "canonical_name_ms": "bunga cengkih",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF141",
+    "canonical_name": "star anise",
+    "canonical_name_ms": "bunga lawang",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF142",
+    "canonical_name": "fennel seeds",
+    "canonical_name_ms": "jintan manis",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF143",
+    "canonical_name": "cardamom",
+    "canonical_name_ms": "buah pelaga",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF144",
+    "canonical_name": "white pepper",
+    "canonical_name_ms": "lada putih",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF145",
+    "canonical_name": "candlenut",
+    "canonical_name_ms": "buah keras",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF146",
+    "canonical_name": "cinnamon",
+    "canonical_name_ms": "kulit kayu manis",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF147",
+    "canonical_name": "nutmeg",
+    "canonical_name_ms": "buah pala",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF148",
+    "canonical_name": "mustard seeds",
+    "canonical_name_ms": "biji sawi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF149",
+    "canonical_name": "coriander seeds",
+    "canonical_name_ms": "biji ketumbar",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF150",
+    "canonical_name": "fenugreek",
+    "canonical_name_ms": "halba",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF151",
+    "canonical_name": "salt",
+    "canonical_name_ms": "garam",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF152",
+    "canonical_name": "black pepper",
+    "canonical_name_ms": "lada hitam",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF153",
+    "canonical_name": "yeast",
+    "canonical_name_ms": "yis / ragi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF154",
+    "canonical_name": "baking powder",
+    "canonical_name_ms": "serbuk penaik",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF155",
+    "canonical_name": "food essence",
+    "canonical_name_ms": "esen",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF156",
+    "canonical_name": "canned sardine in tomato sauce",
+    "canonical_name_ms": "sardin dalam tin",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF157",
+    "canonical_name": "canned mackerel in tomato sauce",
+    "canonical_name_ms": "mackerel dalam tin",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF158",
+    "canonical_name": "canned tuna",
+    "canonical_name_ms": "tuna dalam tin",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF159",
+    "canonical_name": "dried rice vermicelli",
+    "canonical_name_ms": "bihun kering",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF160",
+    "canonical_name": "sliced bread",
+    "canonical_name_ms": "roti sandwich",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF161",
+    "canonical_name": "instant noodles (packet)",
+    "canonical_name_ms": "mi segera (paket)",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF162",
+    "canonical_name": "cup noodles",
+    "canonical_name_ms": "mi segera (cawan)",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF163",
+    "canonical_name": "infant formula milk",
+    "canonical_name_ms": "susu formula bayi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF164",
+    "canonical_name": "adult milk powder",
+    "canonical_name_ms": "susu tepung dewasa",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF165",
+    "canonical_name": "baby food",
+    "canonical_name_ms": "makanan bayi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF166",
+    "canonical_name": "sweetened condensed milk",
+    "canonical_name_ms": "susu pekat manis",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF167",
+    "canonical_name": "evaporated milk",
+    "canonical_name_ms": "susu sejat",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF168",
+    "canonical_name": "cheese slices",
+    "canonical_name_ms": "keju",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF169",
+    "canonical_name": "maternal milk powder",
+    "canonical_name_ms": "susu ibu mengandung",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF170",
+    "canonical_name": "butter",
+    "canonical_name_ms": "mentega",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF171",
+    "canonical_name": "margarine",
+    "canonical_name_ms": "marjerin",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF172",
+    "canonical_name": "peanut butter",
+    "canonical_name_ms": "mentega kacang",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF173",
+    "canonical_name": "kaya (coconut jam)",
+    "canonical_name_ms": "seri kaya",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF174",
+    "canonical_name": "jam",
+    "canonical_name_ms": "jem",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF175",
+    "canonical_name": "mayonnaise",
+    "canonical_name_ms": "mayonis",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF176",
+    "canonical_name": "fresh / UHT milk",
+    "canonical_name_ms": "susu segar",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF177",
+    "canonical_name": "carbonated drink (can)",
+    "canonical_name_ms": "minuman berkarbonat (tin)",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF178",
+    "canonical_name": "fruit juice drink",
+    "canonical_name_ms": "jus buah",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF179",
+    "canonical_name": "carbonated drink (bottle)",
+    "canonical_name_ms": "minuman berkarbonat (botol)",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF180",
+    "canonical_name": "yogurt",
+    "canonical_name_ms": "yogurt",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF181",
+    "canonical_name": "cultured milk drink",
+    "canonical_name_ms": "minuman susu kultur",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF182",
+    "canonical_name": "health drink",
+    "canonical_name_ms": "minuman kesihatan",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF183",
+    "canonical_name": "cooling herbal drink",
+    "canonical_name_ms": "air penyejuk badan",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF184",
+    "canonical_name": "boxed soy milk",
+    "canonical_name_ms": "susu soya (kotak)",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF185",
+    "canonical_name": "energy drink",
+    "canonical_name_ms": "minuman tenaga",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF186",
+    "canonical_name": "isotonic drink",
+    "canonical_name_ms": "minuman isotonik",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF187",
+    "canonical_name": "ground coffee",
+    "canonical_name_ms": "serbuk kopi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF188",
+    "canonical_name": "tea (leaves/bags)",
+    "canonical_name_ms": "teh",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF189",
+    "canonical_name": "cordial syrup",
+    "canonical_name_ms": "kordial",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF190",
+    "canonical_name": "malt drink powder",
+    "canonical_name_ms": "milo",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF191",
+    "canonical_name": "instant coffee",
+    "canonical_name_ms": "kopi segera",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF192",
+    "canonical_name": "cereal drink (nestum)",
+    "canonical_name_ms": "nestum",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF193",
+    "canonical_name": "coffee creamer",
+    "canonical_name_ms": "krimer kopi",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF194",
+    "canonical_name": "malted drink powder",
+    "canonical_name_ms": "horlicks",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF195",
+    "canonical_name": "oats",
+    "canonical_name_ms": "oat",
+    "category": "carbohydrate",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 11:56:10.724621+00:00",
+    "updated_at": "2026-09-08 11:56:10.724621+00:00"
+  },
+  {
+    "canonical_food_id": "SF196",
+    "canonical_name": "chocolate confectionery",
+    "canonical_name_ms": "coklat",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  },
+  {
+    "canonical_food_id": "SF197",
+    "canonical_name": "sugar confectionery (sweets)",
+    "canonical_name_ms": "gula-gula",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  },
+  {
+    "canonical_food_id": "SF198",
+    "canonical_name": "biscuits",
+    "canonical_name_ms": "biskut",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  },
+  {
+    "canonical_food_id": "SF199",
+    "canonical_name": "potato crisps",
+    "canonical_name_ms": "kerepek kentang",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  },
+  {
+    "canonical_food_id": "SF200",
+    "canonical_name": "puffed corn snack",
+    "canonical_name_ms": "snek jagung",
+    "category": "other",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  },
+  {
+    "canonical_food_id": "SF201",
+    "canonical_name": "turkey",
+    "canonical_name_ms": "ayam belanda",
+    "category": "protein",
+    "food_form": "",
+    "status": "ACTIVE",
+    "created_at": "2026-09-08 00:00:00+00:00",
+    "updated_at": "2026-09-08 00:00:00+00:00"
+  }
+]

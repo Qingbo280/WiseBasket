@@ -1,0 +1,202 @@
+food_id,solo_week_floor_g,note
+SF001,500,PM example: 0.5 kg solo meat floor
+SF002,500,PM example: 0.5 kg solo meat floor
+SF003,500,PM example: 0.5 kg solo meat floor
+SF004,500,PM example: 0.5 kg solo meat floor
+SF005,500,PM example: 0.5 kg solo meat floor
+SF006,1000,1 bird
+SF007,1000,1 bird
+SF008,500,PM example: 0.5 kg solo meat floor
+SF010,500,PM example: 0.5 kg solo meat floor
+SF011,500,PM example: 0.5 kg solo meat floor
+SF012,1000,whole animal share
+SF013,500,PM example: 0.5 kg solo meat floor
+SF014,500,PM example: 0.5 kg solo meat floor
+SF015,500,PM example: 0.5 kg solo meat floor
+SF016,500,PM example: 0.5 kg solo meat floor
+SF017,500,PM example: 0.5 kg solo meat floor
+SF018,500,~10 biji (small tray)
+SF019,140,2 biji
+SF020,140,2 biji
+SF021,100,~10 biji
+SF022,300,seafood side portion
+SF023,400,fish portion
+SF024,400,fish portion
+SF025,400,fish portion
+SF026,400,fish portion
+SF027,400,fish portion
+SF028,400,fish portion
+SF029,400,fish portion
+SF030,400,fish portion
+SF031,400,fish portion
+SF032,400,fish portion
+SF033,400,fish portion
+SF034,400,fish portion
+SF035,400,fish portion
+SF036,300,seafood side portion
+SF037,300,seafood side portion
+SF038,300,seafood side portion
+SF039,400,fish portion
+SF040,400,fish portion
+SF041,400,fish portion
+SF042,300,seafood side portion
+SF043,400,fish portion
+SF044,400,fish portion
+SF045,400,fish portion
+SF046,400,fish portion
+SF047,400,fish portion
+SF048,400,fish portion
+SF049,400,fish portion
+SF050,400,fish portion
+SF051,100,flavour base, small bag
+SF052,50,flavour base
+SF053,100,flavour base
+SF054,100,cooking base, loose
+SF055,500,leafy green share
+SF056,250,cooking base
+SF057,500,side carb
+SF058,50,fresh seasoning
+SF059,500,leafy green share
+SF060,25,dried seasoning, one 25 g scoop
+SF061,25,fresh seasoning, potent
+SF062,500,leafy green share
+SF063,500,vegetable share
+SF064,25,fresh seasoning
+SF065,200,garnish/soup
+SF066,50,fresh seasoning
+SF067,500,vegetable share
+SF068,500,vegetable share
+SF069,50,fresh seasoning
+SF070,25,fresh seasoning, potent
+SF071,50,fresh seasoning
+SF072,500,vegetable share
+SF073,500,vegetable share
+SF074,500,leafy green share
+SF075,500,vegetable share
+SF076,500,vegetable share
+SF077,500,vegetable share
+SF078,500,leafy green share
+SF079,500,vegetable share
+SF080,200,garnish/soup
+SF081,500,leafy green share
+SF082,500,vegetable share
+SF083,100,acid garnish, a handful
+SF084,500,vegetable share
+SF085,500,vegetable share
+SF086,500,vegetable share
+SF087,500,vegetable share
+SF088,400,2-3 pieces
+SF089,1000,sold by cut ~1kg
+SF090,500,4-5 bananas
+SF091,360,2 biji
+SF092,800,half-small papaya
+SF093,450,3 biji
+SF094,500,1 small fruit
+SF095,540,3 biji
+SF096,500,1 small bunch
+SF097,1500,1 whole fruit
+SF098,100,acid garnish, a handful
+SF099,450,3 biji
+SF100,500,1 small bunch
+SF101,1000,half melon
+SF102,200,cooking adjunct
+SF103,400,2 packs
+SF104,250,1 bag
+SF105,150,1 piece
+SF106,250,1 block
+SF107,300,1 pack
+SF108,450,1 pack fresh noodles
+SF109,450,1 pack fresh noodles
+SF110,1000,daily staple, ~2/3 of carb meals
+SF111,500,baking/roti staple
+SF112,500,occasional staple
+SF113,500,occasional staple
+SF114,250,coating/thickening
+SF115,250,kuih/noodle making
+SF116,250,kuih making
+SF117,500,baking/roti staple
+SF118,500,stock sweetener
+SF119,250,stock sweetener
+SF120,500,small bottle
+SF121,500,small bottle
+SF122,400,1 jar
+SF123,500,1 packet
+SF124,250,pantry legume
+SF125,250,pantry legume
+SF126,250,pantry legume
+SF127,250,pantry nut
+SF128,250,pantry legume
+SF129,300,1 bottle
+SF130,300,1 bottle
+SF131,300,1 bottle
+SF132,300,1 bottle
+SF133,100,spice powder
+SF134,50,soup base pack
+SF135,25,spice powder
+SF136,25,spice powder
+SF137,60,1 pack
+SF138,34,2 sachets
+SF139,200,1 pack
+SF140,25,whole spice
+SF141,25,whole spice
+SF142,25,whole spice
+SF143,25,whole spice
+SF144,25,whole spice
+SF145,25,whole spice
+SF146,25,whole spice
+SF147,25,whole spice
+SF148,25,whole spice
+SF149,25,whole spice
+SF150,25,whole spice
+SF151,350,1 pack stock
+SF152,25,whole spice
+SF153,11,1 sachet
+SF154,113,1 tin
+SF155,25,1 bottle
+SF156,200,1 can
+SF157,200,1 can
+SF158,100,1 can
+SF159,400,1 pack
+SF160,400,1 loaf
+SF161,400,5-pack
+SF162,150,2-3 cups, occasional
+SF163,850,1 tin
+SF164,600,1 tin
+SF165,225,1 pack
+SF166,500,1 tin
+SF167,390,1 tin
+SF168,250,1 pack
+SF169,650,1 tin
+SF170,227,1 block
+SF171,480,1 tub
+SF172,340,1 jar
+SF173,480,1 jar
+SF174,400,1 jar
+SF175,205,1 bottle
+SF176,1000,1 L
+SF177,320,1 can
+SF178,1000,1 carton
+SF179,1500,1 bottle
+SF180,260,2 cups
+SF181,625,1 strip of 5
+SF182,150,1 bottle
+SF183,1000,1 carton
+SF184,500,2 boxes
+SF185,150,1 can
+SF186,1500,1 bottle
+SF187,200,1 pack
+SF188,200,1 box
+SF189,1000,stock syrup
+SF190,440,1 pack
+SF191,200,1 jar
+SF192,250,breakfast drink base
+SF193,200,1 pack
+SF194,400,1 pack
+SF195,500,breakfast staple
+SF196,135,1 bar
+SF197,74,2 packs
+SF198,300,1 pack
+SF199,60,1 bag
+SF200,60,1 bag
+SF201,500,PM example: 0.5 kg solo meat floor
+SF202,500,side carb

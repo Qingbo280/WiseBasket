@@ -1,0 +1,68 @@
+# WiseBasket - I1 optimiser v0.1 PILOT DATA (test fixture only, NOT production data)
+# NOTE (canonical-ID authority repair): the pork and shrimp rows below use
+# non-"SF"-prefixed ids (PILOT-PORK / PILOT-SHELLFISH) rather than SF024/SF025.
+# This pilot file's ids were never actually tied to the real canonical_food
+# table, but SF024/SF025 happen to be REAL, currently-active production ids
+# for indian mackerel and tomato respectively -- keeping this fixture's own
+# unrelated pork/shrimp rows under those same id strings was a standing
+# fish<->pork confusion risk (see docs/data_food_integrity/canonical_identity/).
+# Production data will come from the Epic 2 data pipeline (PriceCatcher + MyFCD
+# + team-curated mapping table). Column names below mirror the planned
+# `optimiser_input` schema so the loader can be swapped with minimal changes.
+# Columns:
+#   standard_food_id      canonical food id
+#   name / name_ms        English / Malay display names
+#   category              protein | vegetables | fruit | carbohydrate | other
+#   price_rm_per_100g     RM per 100g (production: 15-day regional median)
+#   price_is_estimated    1 = estimated price (CC3: must be disclosed)
+#   edible_fraction       edible portion ratio (0-1)
+#   kcal_100g ...         nutrient values per 100g edible portion
+#   allergen_tags         semicolon-separated tags (CC1: hard exclusion)
+#   diet_tags             semicolon-separated tags for dietary patterns
+#                         (meat | seafood | pork | shellfish | beef | chicken |
+#                         egg | dairy; hard exclusion,
+#                         same CC1 pre-modelling path as allergen_tags)
+#   pack_grams            grams per retail purchase pack (mirrors the planned
+#                         Unit_Conversion.csv); the solver buys whole packs
+#   pack_label            oral display label for one pack ("tray of 10", ...)
+standard_food_id,name,name_ms,category,price_rm_per_100g,price_is_estimated,edible_fraction,kcal_100g,protein_g_100g,fibre_g_100g,iron_mg_100g,calcium_mg_100g,vita_ug_100g,vitc_mg_100g,allergen_tags,diet_tags,pack_grams,pack_label
+SF001,white rice (raw),beras,carbohydrate,0.30,0,1.0,360,6.5,0.8,0.8,10,0,0,,,1000,1 kg bag
+SF002,chicken egg,telur ayam,protein,0.85,0,0.88,155,13.0,0.0,1.75,56,160,0,egg,egg,550,tray of 10
+SF003,whole chicken,ayam,protein,0.90,0,0.70,215,19.0,0.0,0.9,12,41,0,,meat;chicken,1200,whole chicken (~1.2 kg)
+SF004,dried anchovy,ikan bilis,protein,3.00,0,1.0,305,60.0,0.0,8.6,1600,40,0,fish,seafood,250,250 g pack
+SF005,canned sardine in tomato sauce,sardin tin,protein,1.41,0,1.0,185,18.0,0.0,2.9,240,30,0,fish,seafood,425,can (425 g)
+SF006,tofu,tauhu,protein,1.00,0,1.0,76,8.0,0.3,1.6,350,0,0.1,soy,,300,block (300 g)
+SF007,tempeh,tempe,protein,0.80,0,1.0,193,19.0,0.0,2.7,111,0,0,soy,,300,block (300 g)
+SF008,red lentils,dhal merah,protein,0.80,0,1.0,352,25.0,10.7,7.5,51,0,1.5,,,500,500 g pack
+SF009,peanuts,kacang tanah,protein,1.50,0,1.0,567,26.0,8.5,4.6,92,0,0,peanut,,500,500 g pack
+SF010,water spinach,kangkung,vegetables,0.67,0,0.90,19,2.6,2.1,1.7,77,315,55,,,250,bunch
+SF011,spinach,bayam,vegetables,0.80,0,0.95,23,2.9,2.2,2.7,99,469,28,,,250,bunch
+SF012,cabbage,kubis,vegetables,0.40,0,0.90,25,1.3,2.5,0.5,40,5,36.6,,,1000,head (~1 kg)
+SF013,carrot,lobak merah,vegetables,0.60,0,0.88,41,0.9,2.8,0.3,33,835,5.9,,,500,500 g bag
+SF014,long beans,kacang panjang,vegetables,0.80,0,0.94,47,2.8,3.0,1.0,50,47,18.8,,,300,bundle (300 g)
+SF015,banana,pisang,fruit,0.60,0,0.65,89,1.1,2.6,0.3,5,3,8.7,,,600,comb of 5
+SF016,papaya,betik,fruit,0.50,0,0.80,43,0.5,1.7,0.25,20,47,60.9,,,800,whole (~800 g)
+SF017,orange,oren,fruit,1.00,1,0.70,47,0.9,2.4,0.1,40,11,53.2,,,600,bag of 4
+SF018,sweet potato,keledek,carbohydrate,0.60,0,0.85,86,1.6,3.0,0.6,30,709,2.4,,,1000,1 kg bag
+SF019,wholemeal bread,roti gandum,carbohydrate,0.75,1,1.0,247,13.0,6.8,2.5,107,0,0,gluten,,400,loaf
+SF020,full cream milk,susu penuh krim,other,0.70,1,1.0,61,3.2,0.0,0.05,113,46,0,dairy,dairy,1000,1 L carton
+SF021,palm cooking oil,minyak masak,other,0.30,0,1.0,884,0.0,0.0,0.0,0,0,0,,,1000,1 kg bottle
+SF022,apple,epal,fruit,1.20,1,0.85,52,0.3,2.4,0.1,6,3,4.6,,,600,bag of 4
+SF023,potato,kentang,carbohydrate,0.50,0,0.87,77,2.0,2.2,0.8,12,30,19.7,,,1000,1 kg bag
+PILOT-PORK,pork loin (lean),daging babi,protein,1.80,0,0.95,242,27.0,0.0,1.0,15,5,0,,pork;meat,500,500 g tray
+PILOT-SHELLFISH,shrimp (medium),udang,protein,3.50,0,0.80,99,24.0,0.0,0.5,70,0,0,shellfish,shellfish;seafood,500,500 g tray
+SF026,instant noodles,mee segera,carbohydrate,0.80,1,1.0,440,9.0,2.0,2.2,20,0,0,gluten,,400,5-pack
+SF027,wheat flour,tepung gandum,carbohydrate,0.45,1,1.0,364,10.3,2.7,1.2,15,0,0,gluten,,1000,1 kg bag
+SF028,rolled oats,oat,carbohydrate,0.90,1,1.0,379,13.2,10.1,4.7,52,0,0,,,800,800 g tin
+SF029,beef (lean),daging lembu,protein,2.80,1,0.90,187,26.0,0.0,2.6,12,0,0,,beef;meat,500,500 g tray
+SF030,Indian mackerel (kembung),ikan kembung,protein,1.60,1,0.75,205,19.0,0.0,1.6,30,15,0,fish,seafood,500,~3 fish (500 g)
+SF031,chickpeas (dried),kacang kuda,protein,1.10,1,1.0,364,19.0,17.0,6.2,105,10,4.0,,,500,500 g pack
+SF032,red kidney beans (dried),kacang merah,protein,1.00,1,1.0,333,24.0,15.0,6.7,83,0,1.2,,,500,500 g pack
+SF033,mustard greens (sawi),sawi,vegetables,0.70,1,0.92,22,2.2,2.0,1.5,105,190,45,,,300,bunch (300 g)
+SF034,tomato,tomato,vegetables,0.60,1,0.95,18,0.9,1.2,0.3,10,42,14,,,500,~4 pcs (500 g)
+SF035,cucumber,timun,vegetables,0.50,1,0.95,15,0.7,0.5,0.3,16,5,2.8,,,400,1 pc (~400 g)
+SF036,watermelon,tembikai,fruit,0.40,1,0.92,30,0.6,0.4,0.2,7,28,8.1,,,2000,quarter (~2 kg)
+SF037,guava,jambu batu,fruit,0.80,1,0.88,68,2.6,5.4,0.3,18,31,228,,,500,~3 pcs (500 g)
+SF038,cooking sauces,sos masakan,other,1.20,1,1.0,90,3.0,0.2,0.8,15,0,0,soy,,340,bottle (340 g)
+SF039,cream crackers,biskut krim,other,0.90,1,1.0,430,9.0,2.5,2.0,60,0,0,gluten,,300,pack (300 g)
+SF040,canned sweet corn,jagung tin,other,0.80,1,1.0,81,2.5,2.0,0.5,10,1,5.5,,,425,can (425 g)

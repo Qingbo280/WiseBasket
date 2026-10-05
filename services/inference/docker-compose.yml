@@ -1,0 +1,8 @@
+# Local smoke setup: build the inference image and serve it on :8000.
+services:
+  inference:
+    build: .
+    ports:
+      - "8000:8000"
+    # ponytail: no healthcheck/restart policy here — Railway supplies those in prod;
+    # locally you just watch the logs.

@@ -1,0 +1,110 @@
+/* For Usability Testing or UAT only. Web testing shell styles. */
+.wb-testing { box-sizing: border-box; width: 100%; height: 100%; overflow: auto;
+          background: #f4f7f5; color: #123b35; padding: 16px 32px; font-family: system-ui, sans-serif; }
+        .wb-mobile-feedback, .wb-mobile-reset, .wb-mobile-error, .wb-mobile-release { display: none; }
+        .wb-testing * { box-sizing: border-box; }
+        .wb-testing header { max-width: 1160px; margin: 0 auto 12px; }
+        .wb-testing h1 { margin: 0 0 4px; font-size: 28px; }
+        .wb-testing p { line-height: 1.6; }
+        .wb-testing header p { margin: 0; color: #61746d; }
+        .wb-testing-layout { display: grid; grid-template-columns: minmax(160px, 1fr) 410px minmax(220px, 1fr);
+          gap: 24px; align-items: start; max-width: 1160px; margin: auto; }
+        .wb-testing-layout > section { margin-top: 32px; }
+        .wb-testing nav button { display: block; width: 100%; text-align: left; padding: 14px;
+          margin-bottom: 8px; background: transparent; border: 0; border-radius: 12px; }
+        .wb-testing button { font: inherit; color: inherit; cursor: pointer; }
+        .wb-testing button[aria-pressed="true"] { background: #deefe6; font-weight: 600; }
+        .wb-phone { width: 410px; padding: 10px; background: #24362f; border-radius: 36px;
+          box-shadow: 0 16px 40px #123b3520; }
+        .wb-phone iframe { display: block; width: 390px; height: min(844px, calc(100dvh - 148px)); min-height: 480px; border: 0;
+          border-radius: 26px; background: #fefdfa; }
+        .wb-guide { background: white; border: 1px solid #dce6df; border-radius: 18px; padding: 24px;
+          position: sticky; top: 32px; margin-top: 32px; }
+        .wb-guide h2 { font-size: 20px; margin: 0; }
+        .wb-guide p { color: #61746d; }
+        .wb-guide button { width: 100%; padding: 12px; border: 1px solid #cbdcd1;
+          border-radius: 10px; background: white; }
+        .wb-guide small { display: block; margin-top: 12px; line-height: 1.6; color: #61746d; }
+        .wb-nav-title { margin: 0 14px 16px; font-size: 15px; color: #61746d; font-weight: 600; }
+        .wb-feedback-link { display: flex; align-items: center; justify-content: center; gap: 12px;
+          padding: 14px 18px; border-radius: 10px; background: #087c70; color: white;
+          text-decoration: none; font-weight: 600; min-height: 48px; }
+        .wb-feedback-link:hover { background: #06665c; }
+        .wb-testing button:focus-visible, .wb-feedback-link:focus-visible {
+          outline: 3px solid #087c70; outline-offset: 3px; }
+        .wb-journey { border-top: 1px solid #dce6df; padding-top: 24px; margin-top: 24px; }
+        .wb-feature-list { list-style: none; padding: 0; margin: 0; }
+        .wb-feature-list > li { padding: 16px 14px; border-bottom: 1px solid #dce6df; }
+        .wb-feature-list h3 { margin: 0; font-size: 16px; }
+        .wb-feature-list p { margin: 8px 0 0; font-size: 14px; color: #61746d; }
+        .wb-receipt-feature { position: relative; }
+        .wb-receipt-help { position: absolute; bottom: calc(100% - 8px); left: 0; right: 0;
+          z-index: 20; padding: 20px; background: #f4fbf7; border: 1px solid #cbdcd1;
+          border-radius: 14px; box-shadow: 0 8px 28px #123b3526;
+          max-height: min(380px, calc(100dvh - 48px)); overflow-y: auto; }
+        .wb-receipt-trigger { display: inline-flex; align-items: center; gap: 10px;
+          border: 0; padding: 0; background: transparent; text-align: left; font-weight: 700 !important; }
+        .wb-receipt-indicator { display: inline-flex; align-items: center; justify-content: center;
+          width: 24px; height: 24px; border-radius: 50%; background: #deefe6; color: #087c70;
+          font-size: 20px; flex-shrink: 0; }
+        .wb-receipt-hint { display: block; margin-top: 6px; color: #61746d; font-size: 12px; }
+        .wb-receipt-help h3 { margin: 0 0 12px; font-size: 16px; }
+        .wb-receipt-help ol { padding-left: 20px; margin: 0; }
+        .wb-receipt-help li { padding-left: 4px; margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
+        .wb-receipt-help li:last-child { margin-bottom: 0; }
+        .wb-resetting { width: 390px; height: min(844px, calc(100dvh - 148px)); min-height: 480px; display: flex; align-items: center;
+          justify-content: center; background: #fefdfa; border-radius: 26px; }
+        .wb-guide button:disabled { cursor: wait; opacity: .6; }
+        .wb-preview { width: 410px; position: sticky; top: 0; }
+        .wb-release { display: flex; justify-content: center; align-items: center;
+          gap: 10px; height: 24px; margin: 0 0 8px; color: #61746d; font-size: 13px; }
+        .wb-environment { padding: 3px 8px; border: 1px solid #cbdcd1;
+          border-radius: 6px; font-size: 11px; font-weight: 600; color: #123b35; }
+        @media (max-width: 1080px) {
+          .wb-testing-layout { grid-template-columns: 410px 1fr; }
+          .wb-testing-layout > section { grid-column: 1 / -1; margin-top: 0; }
+          .wb-feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+          .wb-nav-title { width: 100%; margin-left: 0; margin-bottom: 0; }
+        }
+        /* Browser phones and tablets only; native screens do not load this CSS. */
+        @media (max-width: 899px) {
+          .wb-testing { padding: 0; height: 100vh; height: 100dvh; overflow: hidden;
+            display: grid; grid-template-rows: auto minmax(0, 1fr); }
+          .wb-testing header { width: 100%; max-width: none; margin: 0; flex-shrink: 0;
+            display: grid; grid-template-columns: minmax(48px, 1fr) auto minmax(48px, 1fr);
+            align-items: center; gap: 8px;
+            padding: 4px max(12px, env(safe-area-inset-right)) 4px max(12px, env(safe-area-inset-left));
+            background: #f4f7f5; border-bottom: 1px solid #dce6df; }
+          .wb-title { grid-column: 2; grid-row: 1; min-width: 0; text-align: center; }
+          .wb-title h1 { display: none; }
+          .wb-mobile-release { display: flex; justify-content: center; align-items: center;
+            gap: 5px; white-space: nowrap;
+            color: #123b35; font-size: 13px; font-weight: 600; line-height: 20px; }
+          .wb-testing header p { display: none; }
+          .wb-mobile-feedback { display: inline-flex; align-items: center; justify-content: center;
+            grid-column: 3; grid-row: 1; justify-self: end;
+            min-height: 44px; padding: 0 4px; color: #087c70; font-size: 14px;
+            font-weight: 600; text-decoration: none; }
+          .wb-mobile-feedback:focus-visible { outline: 3px solid #087c70; outline-offset: -3px; }
+          .wb-mobile-reset { display: block; min-height: 44px; padding: 0 4px;
+            grid-column: 1; grid-row: 1; justify-self: start;
+            border: 0; background: transparent; font-size: 14px; }
+          .wb-mobile-error { display: block; position: absolute; top: 53px; left: 12px; right: 12px;
+            z-index: 30; margin: 0; padding: 12px; background: white; border: 1px solid #cbdcd1;
+            border-radius: 10px; box-shadow: 0 4px 16px #123b3526; }
+          .wb-testing-layout { display: grid; grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: minmax(0, 1fr); min-height: 0; width: 100%;
+            max-width: none; margin: 0; gap: 0; align-items: stretch; }
+          .wb-preview { display: grid; grid-template-rows: minmax(0, 1fr); min-height: 0;
+            position: static; width: 100%; max-width: none; }
+          .wb-release { display: none; }
+          .wb-environment { padding: 0 5px; font-size: 10px; }
+          .wb-phone { display: grid; grid-template-rows: minmax(0, 1fr); min-height: 0; width: 100%; padding: 0; border-radius: 0;
+            box-shadow: none; background: #fefdfa; }
+          .wb-phone iframe, .wb-resetting { width: 100%; height: 100%;
+            min-height: 0; max-height: none; border-radius: 0; }
+          .wb-guide, .wb-testing-layout > section { display: none; }
+          .wb-feature-list { grid-template-columns: minmax(0, 1fr); }
+          .wb-receipt-trigger { min-height: 44px; }
+          .wb-receipt-help { max-height: min(380px, calc(100dvh - 48px)); }
+        }

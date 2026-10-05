@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseBasket Epic6 Test Bench (Receipt → Pantry → Recipes → Spending)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+  header { background: #1c5d3a; color: #fff; padding: 12px 20px; }
+  header h1 { margin: 0; font-size: 18px; }
+  header .sub { font-size: 12px; opacity: .8; }
+  #evibar { background: #0f3d26; color: #cfe8d8; font-size: 11px; padding: 4px 20px; font-family: Consolas, monospace; position: sticky; top: 0; z-index: 9; }
+  main { max-width: 1080px; margin: 16px auto; padding: 0 16px 60px; }
+  section { background: #fff; border: 1px solid #dde3e8; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+  section h2 { margin: 0 0 10px; font-size: 15px; color: #1c5d3a; }
+  h2 .step { display: inline-block; background: #1c5d3a; color: #fff; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; text-align: center; font-size: 12px; margin-right: 6px; }
+  label { font-size: 12px; color: #555; display: block; margin: 6px 0 2px; }
+  input[type=text], input[type=email], input[type=password], input[type=number], input[type=url], select, textarea {
+    width: 100%; padding: 6px 8px; border: 1px solid #c9d2d9; border-radius: 6px; font-size: 13px; background: #fff;
+  }
+  input[readonly] { background: #f0f3f5; }
+  button { background: #1c5d3a; color: #fff; border: 0; border-radius: 6px; padding: 7px 14px; font-size: 13px; cursor: pointer; margin: 4px 4px 4px 0; }
+  button.sec { background: #5b7083; }
+  button.danger { background: #b3372f; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 150px; }
+  .hint { font-size: 12px; color: #777; margin-top: 4px; }
+  .status { font-size: 12px; padding: 4px 8px; border-radius: 4px; display: inline-block; }
+  .status.ok { background: #e2f4e8; color: #1c6b3c; }
+  .status.err { background: #fbe4e2; color: #a02c24; }
+  .status.wait { background: #fff3d6; color: #8a6d1a; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 8px; }
+  th, td { border: 1px solid #e2e8ec; padding: 5px 6px; text-align: left; vertical-align: top; }
+  th { background: #f0f4f6; }
+  td input, td select { font-size: 12px; padding: 4px 5px; }
+  pre { background: #1e262c; color: #d7e1e8; padding: 10px; border-radius: 8px; font-size: 11px; overflow: auto; max-height: 260px; margin: 8px 0 0; }
+  .log-line { font-size: 11px; padding: 2px 0; border-bottom: 1px dotted #ddd; }
+  .badge { font-size: 10px; background: #e8eef2; border-radius: 4px; padding: 1px 5px; margin-left: 4px; color: #33454f; }
+  .card { border: 1px solid #e0e6ea; border-radius: 8px; padding: 10px; margin: 8px 0; }
+  .card h3 { margin: 0 0 6px; font-size: 14px; }
+  .muted { color: #888; font-size: 12px; }
+  details { margin-top: 6px; }
+  summary { cursor: pointer; font-size: 12.5px; color: #1c5d3a; }
+</style>
+</head>
+<body>
+<header>
+  <h1>WiseBasket Epic 6 Test Bench</h1>
+  <div class="sub">Receipt scan → line review &amp; confirm → Pantry → recipe suggestions (semantic recall) → spending summary · develop branch (PaddleOCR)</div>
+</header>
+<div id="evibar">loading…</div>
+<main>
+
+<section>
+  <h2><span class="step">0</span>Connection settings</h2>
+  <div class="row">
+    <div>
+      <label>API Base URL</label>
+      <input type="url" id="baseUrl">
+      <div class="hint">Default is UAT (Inference-UAT runs PaddleOCR resident). For local testing set this to http://localhost:8083 and start the local API + local inference.</div>
+    </div>
+    <div style="max-width:200px">
+      <label>Quick presets</label>
+      <button class="sec" onclick="setBase('https://wisebasket-uat-api.up.railway.app')">UAT</button>
+      <button class="sec" onclick="setBase('http://localhost:8083')">Local :8083</button>
+    </div>
+  </div>
+  <div style="margin-top:6px">
+    <button onclick="checkHealth()">Check /health</button>
+    <span id="healthOut"></span>
+  </div>
+</section>
+
+<section>
+  <h2><span class="step">1</span>Account (register / login, token auto-refresh on 401)</h2>
+  <div class="row">
+    <div><label>Email</label><input type="email" id="email" value="epic6.test@wisebasket.my"></div>
+    <div><label>Password (min 8 chars)</label><input type="password" id="password" value="test-password-123"></div>
+  </div>
+  <button onclick="doRegister()">Register</button>
+  <button class="sec" onclick="doLogin()">Login</button>
+  <button class="danger" onclick="doLogout()">Logout / clear token</button>
+  <div class="hint" id="authState">Not logged in</div>
+</section>
+
+<section>
+  <h2><span class="step">2</span>Household</h2>
+  <div class="row">
+    <div><label>Name</label><input type="text" id="hhName" value="Epic6 Test Home"></div>
+    <div><label>Adults</label><input type="number" id="hhAdults" value="2" min="0"></div>
+    <div><label>Children</label><input type="number" id="hhChildren" value="1" min="0"></div>
+    <div style="max-width:120px"><label>&nbsp;</label><button onclick="createHousehold()">Create</button></div>
+  </div>
+  <div style="margin-top:6px">
+    <button class="sec" onclick="loadHouseholds()">Refresh household list</button>
+    <span id="hhCurrent" class="status wait">No household selected</span>
+  </div>
+  <div id="hhList"></div>
+</section>
+
+<section>
+  <h2><span class="step">3</span>Upload receipt (JPEG/PNG/WebP ≤ 8MB)</h2>
+  <input type="file" id="receiptFile" accept="image/jpeg,image/png,image/webp">
+  <button onclick="uploadReceipt()">Upload &amp; start OCR</button>
+  <div class="hint">Negative test support (SEC-I2-TC-04): the dialog still lets you pick any file - an oversized (&gt;8MB) or non-image file is rejected with a controlled 422.</div>
+  <div id="receiptStatus" style="margin-top:8px"></div>
+  <details>
+    <summary>Uploaded receipt history (this browser session)</summary>
+    <div id="receiptHistory"></div>
+  </details>
+</section>
+
+<section id="confirmSection" style="display:none">
+  <h2><span class="step">4</span>Line review &amp; confirmation (accept / change candidate / manual pick / skip / edit price)</h2>
+  <div class="hint">Candidates come from PaddleOCR + abbreviation expansion + RapidFuzz matching (auto-match ≥0.88). Confirmed lines enter the Pantry (source=RECEIPT).</div>
+  <table id="linesTable">
+    <thead><tr>
+      <th style="width:30px">#</th><th>OCR line name</th><th style="width:110px">Qty</th><th style="width:110px">Price RM</th>
+      <th>Match decision</th><th style="width:90px">Score</th>
+    </tr></thead>
+    <tbody id="linesBody"></tbody>
+  </table>
+
+  <h2 style="margin-top:16px"><span class="step">+</span>Manual added lines (items OCR missed, AC 6.2.5)</h2>
+  <table>
+    <thead><tr><th>Food (catalogue)</th><th style="width:110px">Qty</th><th style="width:110px">Unit</th><th style="width:110px">Price RM</th><th style="width:60px"></th></tr></thead>
+    <tbody id="addedBody"></tbody>
+  </table>
+  <button class="sec" onclick="addAddedRow()">+ Add row</button>
+
+  <div style="margin-top:10px">
+    <button onclick="confirmReceipt()">Confirm &amp; persist (POST confirm)</button>
+    <span id="confirmOut"></span>
+  </div>
+</section>
+
+<section>
+  <h2><span class="step">5</span>Pantry</h2>
+  <button class="sec" onclick="loadPantry()">Refresh</button>
+  <button onclick="confirmPantry()">Confirm pantry (unlocks recipe 409 gate)</button>
+  <div id="pantryOut"></div>
+  <details>
+    <summary>Add pantry item manually</summary>
+    <div class="row" style="margin-top:6px">
+      <div><label>Food</label><select id="pantryFood"></select></div>
+      <div style="max-width:120px"><label>Qty</label><input type="number" id="pantryQty" placeholder="e.g. 0.5" step="0.001"></div>
+      <div style="max-width:90px"><label>Unit</label><select id="pantryUnit"><option value="kg">kg</option><option value="g">g</option></select></div>
+      <div style="max-width:120px"><label>&nbsp;</label><button onclick="addPantryItem()">Add</button></div>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2><span class="step">6</span>Recipe suggestions (Epic 5/6, incl. semantic recall)</h2>
+  <div class="row">
+    <div style="max-width:160px"><label><input type="checkbox" id="useSemantic" checked> use_semantic</label></div>
+    <div><label>Exclusion codes (comma separated, optional)</label><input type="text" id="recipeExclusions" placeholder="NO_PORK,SHELLFISH"></div>
+    <div style="max-width:140px"><label>&nbsp;</label><button onclick="loadRecipes()">Get suggestions</button></div>
+  </div>
+  <div id="recipeOut"></div>
+</section>
+
+<section>
+  <h2><span class="step">7</span>Spending Summary (AC 6.3/6.4)</h2>
+  <button class="sec" onclick="loadSpending()">Refresh</button>
+  <div id="spendingOut"></div>
+</section>
+
+<section>
+  <h2><span class="step">8</span>Evidence toolkit (5.2.4 SEC / 5.2.2 BE / 5.2.3 DB)</h2>
+  <div class="hint">Every result appears in <b>Last response</b> (status, latency, body) and in the request log - screenshot those together with the green/red verdict line. The sticky bar on top records environment, account, household and time on every screenshot.</div>
+
+  <h2 style="font-size:13px">Auth &amp; boundary (SEC-I2-TC-01/02/03)</h2>
+  <button class="sec" onclick="checkNoToken()">No-token GET /households (expect 401)</button>
+  <button class="sec" onclick="checkAdmin()">Normal user GET /api/v1/admin/dashboard (expect 403)</button>
+  <div class="row" style="margin-top:4px">
+    <div><label>Foreign household ID (another account's)</label><input type="number" id="foreignHh" placeholder="household id owned by another user"></div>
+    <div style="max-width:230px"><label>&nbsp;</label><button class="sec" onclick="checkIsolation()">GET foreign pantry (expect 404)</button></div>
+  </div>
+
+  <h2 style="font-size:13px;margin-top:12px">Upload negative tests (SEC-I2-TC-04 / BE-I2-TC-02)</h2>
+  <button class="sec" onclick="negOversize()">Upload 9MB jpeg (expect 422)</button>
+  <button class="sec" onclick="negFakeMime()">Upload text declared as image/jpeg (expect 422)</button>
+
+  <h2 style="font-size:13px;margin-top:12px">Confirmation negative tests (SEC-I2-TC-05/06 / BE-I2-TC-08/09) - requires a DONE receipt</h2>
+  <button class="sec" onclick="negConfirm('price')">Confirm with price -1 (expect 422)</button>
+  <button class="sec" onclick="negConfirm('qty')">Added line with qty 0 (expect 422)</button>
+  <button class="sec" onclick="negConfirm('food')">Unknown food id SF000 (expect 422)</button>
+  <button class="sec" onclick="dupConfirm()">Send same confirm twice concurrently (idempotency)</button>
+
+  <h2 style="font-size:13px;margin-top:12px">Pantry / recipe gate (BE-I2-TC-10)</h2>
+  <div class="hint">The 409 gate triggers when the pantry changed since the last confirmation (pantry_confirmed_at is cleared on every add/edit/remove). If this household is already confirmed and unchanged, add or edit any pantry item in section 5 first - then this button must return 409, and Confirm pantry in section 5 returns it to 200.</div>
+  <button class="sec" onclick="recipesNoConfirm()">Request recipes with unconfirmed pantry changes (expect 409)</button>
+
+  <h2 style="font-size:13px;margin-top:12px">Export</h2>
+  <button class="sec" onclick="copyLog()">Copy request log</button>
+  <button class="sec" onclick="downloadEvidence()">Download evidence .txt</button>
+  <div style="margin-top:6px"><span id="evidenceOut"></span></div>
+
+  <h2 style="font-size:13px;margin-top:12px">Last response</h2>
+  <div id="lastCall"><span class="muted">no request yet</span></div>
+</section>
+
+<section>
+  <h2>Request log</h2>
+  <div id="log"></div>
+</section>
+
+</main>
+
+<script>
+// ---------------- state ----------------
+const LS = { base:'wb6_base', at:'wb6_at', rt:'wb6_rt', hh:'wb6_hh', email:'wb6_email' };
+let catalog = [];            // [{food_id,name,name_ms,category}]
+let currentReceipt = null;   // last GET receipt json
+let receiptTimer = null;
+
+const $ = id => document.getElementById(id);
+$('baseUrl').value = localStorage.getItem(LS.base) || 'https://wisebasket-uat-api.up.railway.app';
+function setBase(u){ $('baseUrl').value = u; localStorage.setItem(LS.base, u); }
+function base(){ return $('baseUrl').value.replace(/\/+$/,''); }
+
+function log(msg, cls){
+  const el = document.createElement('div');
+  el.className = 'log-line';
+  el.innerHTML = `<span class="muted">${new Date().toLocaleTimeString()}</span> <span class="${cls||''}">${msg}</span>`;
+  $('log').prepend(el);
+}
+
+async function rawApi(method, path, { body, form, auth=true, retry=true } = {}){
+  const url = base() + path;
+  const headers = {};
+  if (auth){ const at = localStorage.getItem(LS.at); if (at) headers['Authorization'] = 'Bearer ' + at; }
+  let payload;
+  if (form){ payload = form; }
+  else if (body !== undefined){ headers['Content-Type'] = 'application/json'; payload = JSON.stringify(body); }
+  log(`${method} ${path}`);
+  const t0 = Date.now();
+  const resp = await fetch(url, { method, headers, body: payload });
+  let data = null;
+  const text = await resp.text();
+  try { data = JSON.parse(text); } catch(e) { data = text; }
+  lastCall = { method, path, status: resp.status, ms: Date.now() - t0, at: new Date().toLocaleString(),
+               body: (typeof data === "string" ? data.slice(0, 2000) : data) };
+  renderLastCall();
+
+  if (resp.status === 401 && auth && retry){
+    const rt = localStorage.getItem(LS.rt);
+    if (rt){
+      log('401 → trying token refresh','wait');
+      const r2 = await fetch(base() + '/api/v1/auth/refresh', {
+        method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({refresh_token: rt})
+      });
+      if (r2.ok){
+        const t = await r2.json();
+        localStorage.setItem(LS.at, t.access_token);
+        localStorage.setItem(LS.rt, t.refresh_token);
+        updateAuthState();
+        return rawApi(method, path, { body, form, auth, retry:false });
+      } else {
+        log('refresh failed, please login again','err');
+      }
+    }
+  }
+  if (!resp.ok){
+    const detail = (data && data.detail) ? (typeof data.detail === 'string' ? data.detail : JSON.stringify(data.detail)) : (text || resp.statusText);
+    log(`${method} ${path} → ${resp.status} ${detail}`, 'err');
+    throw new Error(`${resp.status}: ${detail}`);
+  }
+  log(`${method} ${path} → ${resp.status} OK`, 'ok');
+  return data;
+}
+
+// ---------------- auth ----------------
+function updateAuthState(){
+  const at = localStorage.getItem(LS.at);
+  $('authState').innerHTML = at
+    ? `<span class="status ok">Logged in (access token in localStorage, auto refresh on 401)</span>`
+    : `<span class="status wait">Not logged in</span>`;
+  if (localStorage.getItem(LS.hh)) $('hhCurrent').textContent = 'current household_id = ' + localStorage.getItem(LS.hh);
+}
+async function doRegister(){
+  try {
+    const t = await rawApi('POST','/api/v1/auth/register',{ auth:false, body:{
+      email:$('email').value.trim(), password:$('password').value, client_type:'MOBILE' }});
+    localStorage.setItem(LS.at, t.access_token); localStorage.setItem(LS.rt, t.refresh_token);
+    localStorage.setItem(LS.email, t.user.email);
+    updateAuthState(); log('register OK user=' + t.user.email,'ok');
+  } catch(e){ alert('register failed: ' + e.message); }
+}
+async function doLogin(){
+  try {
+    const t = await rawApi('POST','/api/v1/auth/login',{ auth:false, body:{
+      email:$('email').value.trim(), password:$('password').value, client_type:'MOBILE' }});
+    localStorage.setItem(LS.at, t.access_token); localStorage.setItem(LS.rt, t.refresh_token);
+    localStorage.setItem(LS.email, t.user.email);
+    updateAuthState(); log('login OK user=' + t.user.email,'ok');
+    loadHouseholds();
+  } catch(e){ alert('login failed: ' + e.message); }
+}
+function doLogout(){
+  localStorage.removeItem(LS.at); localStorage.removeItem(LS.rt); localStorage.removeItem(LS.hh); localStorage.removeItem(LS.email);
+  updateAuthState(); $('hhCurrent').textContent = 'No household selected';
+}
+
+async function checkHealth(){
+  try {
+    const h = await rawApi('GET','/health',{auth:false});
+    $('healthOut').innerHTML = `<span class="status ok">OK · env=${h.environment||'?'} · ${h.status||''}</span>`;
+  } catch(e){ $('healthOut').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+
+// ---------------- catalog ----------------
+async function loadCatalog(force){
+  if (catalog.length && !force) return catalog;
+  log('Loading food catalogue GET /api/v1/foods … (UAT ~10s)','wait');
+  const foods = await rawApi('GET','/api/v1/foods',{auth:false});
+  catalog = foods.map(f => ({ food_id:f.food_id, name:f.name, name_ms:f.name_ms, category:f.category }));
+  catalog.sort((a,b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+  buildFoodSelects();
+  return catalog;
+}
+function foodOptions(selected){
+  const byCat = {};
+  catalog.forEach(f => { (byCat[f.category] = byCat[f.category] || []).push(f); });
+  let html = `<option value="">— select food —</option>`;
+  Object.keys(byCat).sort().forEach(cat => {
+    html += `<optgroup label="${cat}">` + byCat[cat].map(f =>
+      `<option value="${f.food_id}" ${f.food_id===selected?'selected':''}>${f.name} (${f.name_ms})</option>`).join('') + `</optgroup>`;
+  });
+  return html;
+}
+function buildFoodSelects(){
+  $('pantryFood').innerHTML = foodOptions();
+  document.querySelectorAll('select.added-food').forEach(s => { const v = s.value; s.innerHTML = foodOptions(v); });
+  document.querySelectorAll('select.line-decision').forEach(s => rebuildDecisionSelect(s, s.dataset.proposed, JSON.parse(s.dataset.candidates||'[]'), s.value));
+}
+
+// ---------------- households ----------------
+async function createHousehold(){
+  try {
+    const h = await rawApi('POST','/api/v1/households',{ body:{
+      name:$('hhName').value.trim(), adults:+$('hhAdults').value, children:+$('hhChildren').value }});
+    const id = h.household_id ?? h.id ?? (h.household && h.household.household_id);
+    selectHousehold(id, h.name || $('hhName').value);
+    loadHouseholds();
+  } catch(e){ alert('create household failed: ' + e.message); }
+}
+async function loadHouseholds(){
+  try {
+    const list = await rawApi('GET','/api/v1/households');
+    const arr = Array.isArray(list) ? list : (list.households || []);
+    $('hhList').innerHTML = arr.map(h =>
+      `<div class="card"><b>#${h.id}</b> ${h.name||''} · adults ${h.adults} · children ${h.children}
+       <button class="sec" style="float:right" onclick="selectHousehold(${h.id},'${(h.name||'').replace(/'/g,'')}',this)">Use</button></div>`).join('')
+      || '<div class="muted">(no household yet - create one first)</div>';
+  } catch(e){ $('hhList').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+function selectHousehold(id, name){
+  localStorage.setItem(LS.hh, id);
+  $('hhCurrent').innerHTML = `<span class="status ok">current household_id = ${id} ${name||''}</span>`;
+}
+function hh(){ const v = localStorage.getItem(LS.hh); if(!v){ alert('select a household first'); throw new Error('no household'); } return v; }
+
+// ---------------- receipt ----------------
+async function uploadReceipt(){
+  const f = $('receiptFile').files[0];
+  if (!f){ alert('choose a receipt image first'); return; }
+  try {
+    await loadCatalog();
+    const form = new FormData();
+    form.append('file', f, f.name);
+    const r = await rawApi('POST', `/api/v1/households/${hh()}/receipts`, { form });
+    ocrStart = Date.now();
+    log('receipt_id = ' + r.receipt_id, 'ok');
+    $('receiptHistory').innerHTML = `<div class="log-line">receipt_id: <code>${r.receipt_id}</code> <button class="sec" onclick="loadReceipt('${r.receipt_id}')">View</button></div>` + $('receiptHistory').innerHTML;
+    pollReceipt(r.receipt_id);
+  } catch(e){ $('receiptStatus').innerHTML = `<span class="status err">upload failed: ${e.message}</span>`; }
+}
+
+async function pollReceipt(receiptId){
+  if (receiptTimer) clearInterval(receiptTimer);
+  let tries = 0;
+  const tick = async () => {
+    tries++;
+    try {
+      const r = await rawApi('GET', `/api/v1/households/${hh()}/receipts/${receiptId}`);
+      currentReceipt = r;
+      const badge = { PENDING:'wait', PROCESSING:'wait', DONE:'ok', FAILED:'err' }[r.status] || 'wait';
+      $('receiptStatus').innerHTML =
+        `<span class="status ${badge}">${r.status}</span> ` +
+        (r.error ? `<span class="status err">${r.error}</span>` : '') +
+        (r.status==='DONE' ? ` · ${r.lines.length} lines recognised (${r.lines.filter(l=>l.candidates.length).length} with candidates)` : '') +
+        ` <span class="muted">#${tries}</span>`;
+      if (r.status === 'DONE'){ clearInterval(receiptTimer);
+        if (ocrStart) $('receiptStatus').innerHTML += ` <span class="badge">OCR ${((Date.now()-ocrStart)/1000).toFixed(1)}s</span>`;
+        renderLines(r); }
+      else if (r.status === 'FAILED'){ clearInterval(receiptTimer); $('confirmSection').style.display='none'; }
+      else if (tries > 80){ clearInterval(receiptTimer); $('receiptStatus').innerHTML += ' <span class="status err">polling timeout (80 tries)</span>'; }
+    } catch(e){ /* keep polling on transient errors */ }
+  };
+  tick();
+  receiptTimer = setInterval(tick, 3000);
+}
+
+async function loadReceipt(receiptId){ await pollReceipt(receiptId); }
+
+// ---------------- line review / confirm ----------------
+function rebuildDecisionSelect(sel, proposedId, candidates, keepValue){
+  let html = `<option value="__skip__">✗ skip this line</option>`;
+  if (proposedId){
+    const p = catalog.find(c=>c.food_id===proposedId);
+    html += `<option value="${proposedId}">★ accept suggestion: ${p ? p.name : proposedId}</option>`;
+  }
+  if (candidates && candidates.length){
+    html += `<optgroup label="Top-3 candidates">` + candidates.map(c => {
+      const f = catalog.find(x=>x.food_id===c.canonical_food_id);
+      return `<option value="${c.canonical_food_id}">${f ? f.name : c.canonical_food_id} (${c.score.toFixed(3)})</option>`;
+    }).join('') + `</optgroup>`;
+  }
+  html += `<optgroup label="Full catalogue (manual)">` + catalog.map(f =>
+    `<option value="${f.food_id}">${f.category} · ${f.name}</option>`).join('') + `</optgroup>`;
+  sel.innerHTML = html;
+  if (keepValue && [...sel.options].some(o=>o.value===keepValue)) sel.value = keepValue;
+  else sel.value = proposedId ? proposedId : '__skip__';
+}
+
+function renderLines(r){
+  $('confirmSection').style.display = '';
+  const tb = $('linesBody');
+  tb.innerHTML = '';
+  r.lines.forEach(line => {
+    const tr = document.createElement('tr');
+    const proposedId = line.proposed_food ? line.proposed_food.canonical_food_id : '';
+    tr.innerHTML = `
+      <td>${line.display_order}</td>
+      <td><b>${esc(line.name_raw)}</b>${line.expanded_name && line.expanded_name !== line.name_raw ? `<br><span class="badge">expanded: ${esc(line.expanded_name)}</span>` : ''}<br><span class="muted">${line.status}</span></td>
+      <td><input type="text" value="${line.qty ?? ''}" readonly style="width:55px"> <span class="muted">${esc(line.unit||'')}</span></td>
+      <td><input type="number" step="0.01" min="0" class="line-price" data-line="${line.line_id}" value="${line.price_rm ?? ''}"></td>
+      <td><select class="line-decision" data-line="${line.line_id}" data-proposed="${proposedId}" data-candidates='${esc(JSON.stringify(line.candidates||[]))}' style="min-width:220px"></select></td>
+      <td>${line.match_score != null ? line.match_score.toFixed(3) : '<span class="muted">—</span>'}</td>`;
+    tb.appendChild(tr);
+    const sel = tr.querySelector('select.line-decision');
+    rebuildDecisionSelect(sel, proposedId, line.candidates, null);
+  });
+  $('addedBody').innerHTML = '';
+  $('confirmOut').textContent = '';
+  $('confirmSection').scrollIntoView({behavior:'smooth'});
+}
+
+function addAddedRow(){
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td><select class="added-food" style="min-width:220px">${foodOptions()}</select></td>
+    <td><input type="number" class="added-qty" step="0.001" min="0" placeholder="e.g. 1"></td>
+    <td><input type="text" class="added-unit" placeholder="kg / biji / pack" style="width:100px"></td>
+    <td><input type="number" class="added-price" step="0.01" min="0" placeholder="e.g. 5.50"></td>
+    <td><button class="danger" onclick="this.closest('tr').remove()">Del</button></td>`;
+  $('addedBody').appendChild(tr);
+}
+
+async function confirmReceipt(){
+  if (!currentReceipt){ alert('no recognised receipt loaded'); return; }
+  try {
+    const lines = [...document.querySelectorAll('select.line-decision')].map(sel => ({
+      line_id: sel.dataset.line,
+      canonical_food_id: sel.value === '__skip__' ? null : sel.value,
+      price_rm: (() => { const p = document.querySelector(`input.line-price[data-line="${sel.dataset.line}"]`); const v = parseFloat(p.value); return isNaN(v) ? null : v; })()
+    }));
+    const added_lines = [...document.querySelectorAll('#addedBody tr')].map(tr => ({
+      canonical_food_id: tr.querySelector('.added-food').value,
+      name_raw: null,
+      qty: (v => isNaN(v)?null:v)(parseFloat(tr.querySelector('.added-qty').value)),
+      unit: tr.querySelector('.added-unit').value || null,
+      price_rm: (v => isNaN(v)?null:v)(parseFloat(tr.querySelector('.added-price').value))
+    })).filter(a => a.canonical_food_id);
+
+    const r = await rawApi('POST', `/api/v1/households/${hh()}/receipts/${currentReceipt.receipt_id}/confirm`,
+      { body: { lines, added_lines } });
+    $('confirmOut').innerHTML = `<span class="status ok">confirm done · ${r.lines.filter(l=>l.status==='CONFIRMED').length} CONFIRMED / ${r.lines.filter(l=>l.status==='SKIPPED').length} SKIPPED</span>`;
+    currentReceipt = r;
+    loadPantry(); loadSpending();
+  } catch(e){ $('confirmOut').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+
+// ---------------- pantry ----------------
+async function loadPantry(){
+  try {
+    const items = await rawApi('GET', `/api/v1/households/${hh()}/pantry-items`);
+    $('pantryOut').innerHTML = items.length ? `<table><thead><tr><th>ID</th><th>Food</th><th>Source</th><th>Qty</th><th>Status</th><th></th></tr></thead><tbody>` +
+      items.map(i => `<tr><td>${i.pantry_item_id}</td><td>${esc(i.food.name)} <span class="muted">${esc(i.food.name_ms||'')}</span></td>
+        <td>${i.source}</td><td>${i.quantity ?? '—'} ${i.unit ?? ''}</td><td>${i.status}</td>
+        <td><button class="danger" onclick="deletePantry(${i.pantry_item_id})">Del</button></td></tr>`).join('') +
+      `</tbody></table>` : '<div class="muted">(empty)</div>';
+  } catch(e){ $('pantryOut').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+async function addPantryItem(){
+  try {
+    await rawApi('POST', `/api/v1/households/${hh()}/pantry-items`, { body:{
+      canonical_food_id: $('pantryFood').value,
+      quantity: $('pantryQty').value ? +$('pantryQty').value : null,
+      unit: $('pantryQty').value ? $('pantryUnit').value : null
+    }});
+    loadPantry();
+  } catch(e){ alert('add failed: ' + e.message); }
+}
+async function deletePantry(id){
+  try { await rawApi('DELETE', `/api/v1/households/${hh()}/pantry-items/${id}`); loadPantry(); }
+  catch(e){ alert('delete failed: ' + e.message); }
+}
+async function confirmPantry(){
+  try {
+    const r = await rawApi('POST', `/api/v1/households/${hh()}/pantry-confirmations`, { body:{} });
+    log(`pantry confirmed · ${r.available_item_count} items`, 'ok');
+    alert(`Pantry confirmed (${r.available_item_count} items available) - you can now request recipe suggestions`);
+  } catch(e){ alert('confirm failed: ' + e.message); }
+}
+
+// ---------------- recipes ----------------
+async function loadRecipes(){
+  try {
+    const sem = $('useSemantic').checked;
+    const excl = $('recipeExclusions').value.trim();
+    const path = `/api/v1/households/${hh()}/recipe-suggestions?use_semantic=${sem}` + (excl ? '&exclusions=' + encodeURIComponent(excl).replace(/%2C/g,',') : '');
+    const list = await rawApi('GET', path);
+    $('recipeOut').innerHTML = list.length ? list.map(r => `
+      <div class="card"><h3>${esc(r.name)} <span class="badge">${r.required_match_count}/${r.required_ingredient_count} required ingredients</span>
+        ${r.semantic_score != null ? `<span class="badge">semantic ${r.semantic_score.toFixed(3)}</span>` : ''}
+        ${r.quantity_status !== 'NOT_TRACKED' ? `<span class="badge">${r.quantity_status}</span>` : ''}</h3>
+        <div class="muted">have: ${r.available_ingredients.map(f=>esc(f.name)).join(', ') || '—'}</div>
+        <div class="muted">missing: ${r.missing_required_ingredients.map(f=>esc(f.name)).join(', ') || '—'}</div>
+        <button class="sec" onclick="loadRecipeDetail('${r.recipe_id}')">Detail (steps/subs)</button>
+        <div id="rd-${r.recipe_id}"></div>
+      </div>`).join('') : '<div class="muted">No matching recipes (confirm the pantry first, or tick use_semantic)</div>';
+  } catch(e){ $('recipeOut').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+async function loadRecipeDetail(recipeId){
+  try {
+    const d = await rawApi('GET', `/api/v1/households/${hh()}/recipes/${recipeId}`);
+    const el = $('rd-' + recipeId);
+    el.innerHTML = `<table><thead><tr><th>Food</th><th>Required</th><th>Needed (kg)</th><th>In stock (kg)</th><th>Status</th></tr></thead><tbody>` +
+      d.ingredients.map(i => `<tr><td>${esc(i.food.name)}</td><td>${i.required?'✓':'—'}</td><td>${i.required_quantity_kg ?? '—'}</td><td>${i.available_quantity_kg ?? '—'}</td><td>${i.quantity_status}</td></tr>`).join('') +
+      `</tbody></table>` +
+      (d.substitution_suggestions.length ? `<div class="muted">Substitutions: ${d.substitution_suggestions.map(s=>`${esc(s.original_food.name)} → ${esc(s.substitute_food.name)}`).join('; ')}</div>` : '') +
+      `<details><summary>Cooking steps (${d.cooking_steps.length})</summary><ol>${d.cooking_steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></details>`;
+  } catch(e){ $('rd-' + recipeId).innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+
+// ---------------- spending ----------------
+async function loadSpending(){
+  try {
+    const s = await rawApi('GET', `/api/v1/households/${hh()}/spending-summary`);
+    const bs = { NO_BUDGET:'No budget', WITHIN_BUDGET:'Within budget', OVER_BUDGET:'Over budget' }[s.budget_status];
+    $('spendingOut').innerHTML = `<table><tbody>
+      <tr><th>Weekly budget</th><td>${s.weekly_budget_rm ?? '—'}</td></tr>
+      <tr><th>Plan estimate</th><td>${s.estimated_cost_rm ?? '—'}</td></tr>
+      <tr><th>Actual spend (confirmed receipt lines)</th><td><b>RM ${s.actual_spend_rm.toFixed(2)}</b> (${s.confirmed_receipt_count} receipts)</td></tr>
+      <tr><th>Remaining budget</th><td>${s.remaining_budget_rm ?? '—'}</td></tr>
+      <tr><th>Amount over budget</th><td>${s.amount_above_budget_rm ?? '—'}</td></tr>
+      <tr><th>Estimate vs actual difference</th><td>${s.estimated_vs_actual_difference_rm ?? '—'}</td></tr>
+      <tr><th>Budget status</th><td><span class="status ${s.budget_status==='OVER_BUDGET'?'err':(s.budget_status==='WITHIN_BUDGET'?'ok':'wait')}">${bs}</span></td></tr>
+    </tbody></table>`;
+  } catch(e){ $('spendingOut').innerHTML = `<span class="status err">${e.message}</span>`; }
+}
+
+// ---------------- evidence helpers ----------------
+let ocrStart = null;
+let lastCall = null;
+function renderLastCall(){
+  if (!lastCall) return;
+  const ok = lastCall.status < 400;
+  $('lastCall').innerHTML =
+    `<div class="status ${ok?'ok':'err'}">${lastCall.method} ${lastCall.path} -> ${lastCall.status} · ${lastCall.ms} ms · ${lastCall.at}</div>` +
+    `<pre>${esc(JSON.stringify(lastCall.body, null, 2)).slice(0, 3500)}</pre>`;
+}
+function evOut(html){ $('evidenceOut').innerHTML = html; }
+async function checkNoToken(){
+  try { await rawApi('GET','/api/v1/households',{auth:false}); evOut('<span class="status err">UNEXPECTED 200 without token</span>'); }
+  catch(e){ evOut(`<span class="status ok">no-token request rejected: ${e.message}</span>`); }
+}
+async function checkAdmin(){
+  try { await rawApi('GET','/api/v1/admin/dashboard'); evOut('<span class="status err">UNEXPECTED: admin endpoint returned 200 for a normal user</span>'); }
+  catch(e){ evOut(`<span class="status ok">admin boundary: ${e.message}</span>`); }
+}
+async function checkIsolation(){
+  const id = $('foreignHh').value;
+  if(!id){ alert('enter a foreign household id first'); return; }
+  try { await rawApi('GET', `/api/v1/households/${id}/pantry-items`); evOut('<span class="status err">UNEXPECTED 200 on a foreign household</span>'); }
+  catch(e){ evOut(`<span class="status ok">household isolation: ${e.message}</span>`); }
+}
+async function tryUpload(f, label){
+  try {
+    await loadCatalog();
+    const form = new FormData(); form.append('file', f, f.name);
+    await rawApi('POST', `/api/v1/households/${hh()}/receipts`, { form });
+    evOut(`<span class="status err">UNEXPECTED: ${label} was accepted</span>`);
+  } catch(e){ evOut(`<span class="status ok">${label} rejected: ${e.message}</span>`); }
+}
+function negOversize(){
+  const f = new File([new Blob([new Uint8Array(9*1024*1024)])], 'oversize-test.jpg', { type:'image/jpeg' });
+  tryUpload(f, 'oversize 9MB jpeg');
+}
+function negFakeMime(){
+  const f = new File([new Blob(['this is plain text, not an image'])], 'fake-text.jpg', { type:'image/jpeg' });
+  tryUpload(f, 'text declared as image/jpeg');
+}
+async function negConfirm(which){
+  if (!currentReceipt){ alert('upload and recognise a receipt first (section 3)'); return; }
+  const line = currentReceipt.lines[0];
+  const payload = { lines: [{ line_id: line.line_id,
+    canonical_food_id: line.proposed_food ? line.proposed_food.canonical_food_id : null,
+    price_rm: 5.0 }], added_lines: [] };
+  if (which === 'price') payload.lines[0].price_rm = -1;
+  if (which === 'food')  payload.lines[0].canonical_food_id = 'SF000';
+  if (which === 'qty')   payload.added_lines = [{ canonical_food_id: catalog[0].food_id, name_raw: null, qty: 0, unit: 'kg', price_rm: 1.0 }];
+  try {
+    await rawApi('POST', `/api/v1/households/${hh()}/receipts/${currentReceipt.receipt_id}/confirm`, { body: payload });
+    evOut(`<span class="status err">UNEXPECTED: invalid ${which} accepted</span>`);
+  } catch(e){ evOut(`<span class="status ok">invalid ${which} rejected: ${e.message}</span>`); }
+}
+async function dupConfirm(){
+  if (!currentReceipt){ alert('upload and recognise a receipt first (section 3)'); return; }
+  const body = { lines: currentReceipt.lines.map(l => ({ line_id: l.line_id, canonical_food_id: null, price_rm: l.price_rm })), added_lines: [] };
+  const p = `/api/v1/households/${hh()}/receipts/${currentReceipt.receipt_id}/confirm`;
+  try {
+    await Promise.all([rawApi('POST', p, { body }), rawApi('POST', p, { body })]);
+    evOut('<span class="status ok">two concurrent confirms completed - check the log: idempotent result, no duplicate stock</span>');
+  } catch(e){ evOut(`<span class="status wait">concurrent confirm: ${e.message} (check log)</span>`); }
+}
+async function recipesNoConfirm(){
+  try {
+    await rawApi('GET', `/api/v1/households/${hh()}/recipe-suggestions?use_semantic=false`);
+    evOut('<span class="status err">UNEXPECTED 200: recipes served without pantry confirmation</span>');
+  } catch(e){ evOut(`<span class="status ok">recipe gate: ${e.message}</span>`); }
+}
+function copyLog(){
+  const txt = [...document.querySelectorAll('#log .log-line')].map(l => l.textContent).join('\n');
+  navigator.clipboard.writeText(txt).then(() => evOut('<span class="status ok">request log copied to clipboard</span>'));
+}
+function downloadEvidence(){
+  const txt = [...document.querySelectorAll('#log .log-line')].map(l => l.textContent).join('\n');
+  const blob = new Blob([txt], { type:'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'epic6test-evidence-' + new Date().toISOString().replace(/[:.]/g,'-') + '.txt';
+  a.click();
+  evOut('<span class="status ok">evidence .txt downloaded</span>');
+}
+// ---------------- evidence banner ----------------
+function updateEvibar(){
+  const env = base().includes('uat') ? 'UAT' : (base().includes('localhost') ? 'LOCAL' : base());
+  const email = localStorage.getItem(LS.email) || 'not logged in';
+  const hhId = localStorage.getItem(LS.hh) || '-';
+  $('evibar').textContent = `ENV: ${env} | API: ${base()} | account: ${email} | household: ${hhId} | ${new Date().toLocaleString()}`;
+}
+setInterval(updateEvibar, 1000);
+
+function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// boot
+updateAuthState();
+updateEvibar();
+checkHealth();
+loadCatalog().catch(e => log('catalogue load failed (retried on upload): ' + e.message, 'err'));
+</script>
+</body>
+</html>

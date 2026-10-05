@@ -1,0 +1,35 @@
+{
+  "canonical_food_id": "SF202",
+  "canonical_name": "sweet potato",
+  "canonical_name_ms": "keledek",
+  "category": "carbohydrate",
+  "note": "WiseBasket extension beyond the Data-team 201 catalogue (catalogue gap, user decision 2026-09-09). Carried over from pre-rebuild SF018 identity.",
+  "aliases": [
+    {"alias_name": "sweet potato", "language": "en", "source_system": "WISEBASKET_CURATED"},
+    {"alias_name": "keledek", "language": "ms", "source_system": "WISEBASKET_CURATED"}
+  ],
+  "mappings": [
+    {"source_system": "MYFCD", "source_dataset_version": "MYFCD_1997", "source_food_id": "102007",
+     "source_food_name": "SWEET POTATO (UBI KELEDEK), IPOMOEA BATATAS", "source_unit_or_form": null,
+     "mapping_status": "EXACT", "verification_status": "VERIFIED", "review_status": "APPROVED",
+     "evidence_note": "Carried over from pre-rebuild SF018 (same MyFCD identity)."}
+  ],
+  "nutrition": {
+    "source_dataset_version": "MYFCD_1997", "source_record_id": "102007",
+    "basis_g": 100, "energy_kcal": 138, "protein_g": 2.0, "fat_g": 0.6, "carbohydrate_g": 32,
+    "quality_status": "PASS", "is_current": true,
+    "evidence_note": "Carried over from pre-rebuild SF018 MyFCD 1997 record 102007. USDA anchor may supersede in Phase 3."
+  },
+  "unit_conversions": [
+    {"conversion_type": "PURCHASE_MASS", "source_unit": "1000 g", "factor": 1000,
+     "edible_yield_fraction": null, "production_eligible": true,
+     "evidence_note": "Carried over from pre-rebuild SF018."},
+    {"conversion_type": "EDIBLE_YIELD", "source_unit": "purchase_mass", "factor": null,
+     "edible_yield_fraction": 0.95, "production_eligible": true,
+     "evidence_note": "MyFCD verified 0.95 (carried over from pre-rebuild SF018)."}
+  ],
+  "pricing": {
+    "status": "NO_OFFICIAL_PRICECATCHER_ITEMS",
+    "note": "Pre-rebuild SF018 had zero real PriceCatcher items (only demo SEED rows). Goes through the Phase 3 reference-price path (ONLINE_SEED / FAMA_SEED, price_is_estimated=1)."
+  }
+}

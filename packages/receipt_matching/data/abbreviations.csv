@@ -1,0 +1,36 @@
+token,expansion,note
+# --- generic category prefixes (expansion empty = drop token; guarded: never drop everything) ---
+SAYUR,,vegetable prefix adds no identity (sayur kangkung -> kangkung)
+BUAH,,fruit prefix adds no identity (buah naga -> naga)
+# --- glued size/unit tokens (BERAS5KG -> BERAS; qty/unit are structurally parsed fields) ---
+KG,,kilogram glued into the name line adds no identity
+G,,gram glued into the name line adds no identity
+L,,litre glued into the name line adds no identity
+ML,,millilitre glued into the name line adds no identity
+# --- storage / origin (retailer English abbreviations) ---
+CH,Chilled,chilled
+CLD,Chilled,chilled
+FR,Fresh,fresh
+FG,Frozen,frozen
+FZ,Frozen,frozen
+AUS,Australian,origin
+NZ,New Zealand,origin
+MAL,Malaysian,origin
+# --- meat/fish cuts (retailer English abbreviations) ---
+OY,Oyster,oyster blade cut
+BL,Blade,oyster blade / blade cut
+BRST,Breast,breast cut
+DRM,Drumstick,drumstick
+DRUM,Drumstick,drumstick
+MINCE,Minced,minced
+SLICE,Sliced,sliced
+CUBE,Cubed,cubed
+BONES,Bertulang,with bone (ms)
+# --- Malay variant spellings (differ from catalogue spelling, not just case) ---
+TELOR,Telur,common misspelling of telur
+TENGIRI,Tenggiri,catalogue spells tenggiri
+TAUGEH,Tauge,variant spelling of tauge
+TEMPEH,Tempe,variant spelling of tempe
+TAHU,Tauhu,variant spelling of tauhu
+KANGKONG,Kangkung,variant spelling of kangkung
+KUEYTEOW,Kuetiau,glued receipt spelling

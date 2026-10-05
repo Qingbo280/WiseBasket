@@ -1,0 +1,1003 @@
+{
+  "review_source": "WISEBASKET_FULL_RECIPE_COMPONENT_REVIEW_2026_09_21",
+  "step_food_links": [
+    [
+      "bihun-goreng",
+      1,
+      "SF159"
+    ],
+    [
+      "bihun-goreng",
+      3,
+      "SF022"
+    ],
+    [
+      "bihun-goreng",
+      3,
+      "SF018"
+    ],
+    [
+      "bihun-goreng",
+      4,
+      "SF055"
+    ],
+    [
+      "bihun-goreng",
+      4,
+      "SF081"
+    ],
+    [
+      "bihun-goreng",
+      2,
+      "SF131"
+    ],
+    [
+      "bihun-goreng",
+      2,
+      "SF129"
+    ],
+    [
+      "cabbage-mamak-stir-fry",
+      3,
+      "SF055"
+    ],
+    [
+      "cabbage-mamak-stir-fry",
+      2,
+      "SF077"
+    ],
+    [
+      "cauliflower-stir-fry",
+      2,
+      "SF079"
+    ],
+    [
+      "cauliflower-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "dhal-curry-with-rice",
+      1,
+      "SF124"
+    ],
+    [
+      "dhal-curry-with-rice",
+      1,
+      "SF057"
+    ],
+    [
+      "dhal-curry-with-rice",
+      1,
+      "SF072"
+    ],
+    [
+      "dhal-curry-with-rice",
+      4,
+      "SF110"
+    ],
+    [
+      "egg-potato-curry-with-rice",
+      1,
+      "SF018"
+    ],
+    [
+      "egg-potato-curry-with-rice",
+      3,
+      "SF057"
+    ],
+    [
+      "egg-potato-curry-with-rice",
+      3,
+      "SF072"
+    ],
+    [
+      "egg-potato-curry-with-rice",
+      4,
+      "SF102"
+    ],
+    [
+      "egg-potato-curry-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "french-bean-garlic-stir-fry",
+      2,
+      "SF067"
+    ],
+    [
+      "french-bean-garlic-stir-fry",
+      3,
+      "SF131"
+    ],
+    [
+      "garlic-broccoli-stir-fry",
+      2,
+      "SF082"
+    ],
+    [
+      "garlic-broccoli-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "garlic-long-beans",
+      2,
+      "SF084"
+    ],
+    [
+      "garlic-long-beans",
+      3,
+      "SF131"
+    ],
+    [
+      "garlic-prawn-stir-fry",
+      2,
+      "SF022"
+    ],
+    [
+      "garlic-prawn-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "garlic-prawn-stir-fry",
+      3,
+      "SF110"
+    ],
+    [
+      "garlic-spinach-stir-fry",
+      2,
+      "SF062"
+    ],
+    [
+      "garlic-spinach-stir-fry",
+      1,
+      "SF170"
+    ],
+    [
+      "long-bean-egg-stir-fry",
+      2,
+      "SF084"
+    ],
+    [
+      "long-bean-egg-stir-fry",
+      3,
+      "SF018"
+    ],
+    [
+      "long-bean-egg-stir-fry",
+      2,
+      "SF077"
+    ],
+    [
+      "maggi-goreng",
+      1,
+      "SF161"
+    ],
+    [
+      "maggi-goreng",
+      2,
+      "SF018"
+    ],
+    [
+      "maggi-goreng",
+      3,
+      "SF055"
+    ],
+    [
+      "maggi-goreng",
+      3,
+      "SF129"
+    ],
+    [
+      "maggi-goreng",
+      3,
+      "SF132"
+    ],
+    [
+      "malay-chicken-soup",
+      2,
+      "SF006"
+    ],
+    [
+      "malay-chicken-soup",
+      3,
+      "SF057"
+    ],
+    [
+      "malay-chicken-soup",
+      3,
+      "SF077"
+    ],
+    [
+      "malay-chicken-soup",
+      5,
+      "SF110"
+    ],
+    [
+      "malaysian-chicken-curry-with-rice",
+      2,
+      "SF014"
+    ],
+    [
+      "malaysian-chicken-curry-with-rice",
+      3,
+      "SF057"
+    ],
+    [
+      "malaysian-chicken-curry-with-rice",
+      4,
+      "SF102"
+    ],
+    [
+      "malaysian-chicken-curry-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "mee-goreng",
+      4,
+      "SF109"
+    ],
+    [
+      "mee-goreng",
+      1,
+      "SF107"
+    ],
+    [
+      "mee-goreng",
+      2,
+      "SF018"
+    ],
+    [
+      "mee-goreng",
+      3,
+      "SF055"
+    ],
+    [
+      "mee-goreng",
+      4,
+      "SF129"
+    ],
+    [
+      "mee-goreng",
+      4,
+      "SF132"
+    ],
+    [
+      "mee-goreng",
+      4,
+      "SF130"
+    ],
+    [
+      "mixed-vegetable-stir-fry",
+      2,
+      "SF055"
+    ],
+    [
+      "mixed-vegetable-stir-fry",
+      3,
+      "SF077"
+    ],
+    [
+      "mixed-vegetable-stir-fry",
+      3,
+      "SF067"
+    ],
+    [
+      "mustard-greens-stir-fry",
+      2,
+      "SF081"
+    ],
+    [
+      "mustard-greens-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "okra-eggplant-stir-fry",
+      2,
+      "SF073"
+    ],
+    [
+      "okra-eggplant-stir-fry",
+      2,
+      "SF063"
+    ],
+    [
+      "okra-eggplant-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "okra-eggplant-stir-fry",
+      3,
+      "SF131"
+    ],
+    [
+      "onion-omelette",
+      1,
+      "SF018"
+    ],
+    [
+      "onion-omelette",
+      2,
+      "SF056"
+    ],
+    [
+      "onion-omelette",
+      4,
+      "SF110"
+    ],
+    [
+      "potato-onion-stir-fry",
+      2,
+      "SF057"
+    ],
+    [
+      "potato-onion-stir-fry",
+      1,
+      "SF056"
+    ],
+    [
+      "potato-onion-stir-fry",
+      4,
+      "SF110"
+    ],
+    [
+      "red-tilapia-soy-with-rice",
+      1,
+      "SF035"
+    ],
+    [
+      "red-tilapia-soy-with-rice",
+      2,
+      "SF129"
+    ],
+    [
+      "red-tilapia-soy-with-rice",
+      4,
+      "SF110"
+    ],
+    [
+      "sambal-eggplant-with-rice",
+      3,
+      "SF063"
+    ],
+    [
+      "sambal-eggplant-with-rice",
+      2,
+      "SF130"
+    ],
+    [
+      "sambal-eggplant-with-rice",
+      4,
+      "SF110"
+    ],
+    [
+      "sardine-sambal-with-rice",
+      1,
+      "SF156"
+    ],
+    [
+      "sardine-sambal-with-rice",
+      2,
+      "SF056"
+    ],
+    [
+      "sardine-sambal-with-rice",
+      2,
+      "SF130"
+    ],
+    [
+      "sardine-sambal-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "soy-sauce-chicken-with-rice",
+      1,
+      "SF006"
+    ],
+    [
+      "soy-sauce-chicken-with-rice",
+      3,
+      "SF129"
+    ],
+    [
+      "soy-sauce-chicken-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "soy-sauce-eggs-with-rice",
+      1,
+      "SF018"
+    ],
+    [
+      "soy-sauce-eggs-with-rice",
+      3,
+      "SF129"
+    ],
+    [
+      "soy-sauce-eggs-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "soy-sauce-mackerel-with-rice",
+      2,
+      "SF024"
+    ],
+    [
+      "soy-sauce-mackerel-with-rice",
+      3,
+      "SF129"
+    ],
+    [
+      "soy-sauce-mackerel-with-rice",
+      1,
+      "SF130"
+    ],
+    [
+      "soy-sauce-mackerel-with-rice",
+      3,
+      "SF072"
+    ],
+    [
+      "soy-sauce-mackerel-with-rice",
+      4,
+      "SF110"
+    ],
+    [
+      "squid-soy-stir-fry",
+      2,
+      "SF042"
+    ],
+    [
+      "squid-soy-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "squid-soy-stir-fry",
+      3,
+      "SF110"
+    ],
+    [
+      "steamed-egg",
+      1,
+      "SF018"
+    ],
+    [
+      "steamed-egg",
+      3,
+      "SF129"
+    ],
+    [
+      "tofu-cabbage-stir-fry",
+      1,
+      "SF107"
+    ],
+    [
+      "tofu-cabbage-stir-fry",
+      2,
+      "SF055"
+    ],
+    [
+      "tofu-cabbage-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "tofu-cabbage-stir-fry",
+      4,
+      "SF110"
+    ],
+    [
+      "tofu-prawn-stir-fry",
+      3,
+      "SF107"
+    ],
+    [
+      "tofu-prawn-stir-fry",
+      2,
+      "SF022"
+    ],
+    [
+      "tofu-prawn-stir-fry",
+      3,
+      "SF131"
+    ],
+    [
+      "tofu-prawn-stir-fry",
+      3,
+      "SF129"
+    ],
+    [
+      "tofu-prawn-stir-fry",
+      4,
+      "SF110"
+    ],
+    [
+      "tomato-chicken-with-rice",
+      1,
+      "SF006"
+    ],
+    [
+      "tomato-chicken-with-rice",
+      4,
+      "SF072"
+    ],
+    [
+      "tomato-chicken-with-rice",
+      4,
+      "SF132"
+    ],
+    [
+      "tomato-chicken-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "tomato-egg-stir-fry",
+      1,
+      "SF018"
+    ],
+    [
+      "tomato-egg-stir-fry",
+      3,
+      "SF072"
+    ],
+    [
+      "tomato-egg-stir-fry",
+      4,
+      "SF110"
+    ],
+    [
+      "tomato-tofu-with-rice",
+      3,
+      "SF107"
+    ],
+    [
+      "tomato-tofu-with-rice",
+      1,
+      "SF072"
+    ],
+    [
+      "tomato-tofu-with-rice",
+      2,
+      "SF131"
+    ],
+    [
+      "tomato-tofu-with-rice",
+      2,
+      "SF129"
+    ],
+    [
+      "tomato-tofu-with-rice",
+      4,
+      "SF110"
+    ],
+    [
+      "turmeric-chicken-with-rice",
+      1,
+      "SF014"
+    ],
+    [
+      "turmeric-chicken-with-rice",
+      4,
+      "SF084"
+    ],
+    [
+      "turmeric-chicken-with-rice",
+      4,
+      "SF077"
+    ],
+    [
+      "turmeric-chicken-with-rice",
+      5,
+      "SF110"
+    ],
+    [
+      "winged-bean-stir-fry",
+      2,
+      "SF068"
+    ],
+    [
+      "winged-bean-stir-fry",
+      3,
+      "SF129"
+    ]
+  ],
+  "safety_profiles": [
+    {
+      "food_id": "SF006",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF014",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF018",
+      "vegetarian": true,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF022",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF024",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF035",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF042",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF052",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF054",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF055",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF056",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF057",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF058",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF060",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF061",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF062",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF063",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF064",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF067",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF068",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF069",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF071",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF072",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF073",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF077",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF079",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF081",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF082",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF084",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF098",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF102",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF107",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF109",
+      "vegetarian": true,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF110",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF118",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF120",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF124",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF129",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF130",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF131",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF132",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF133",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF134",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF135",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF136",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF139",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF141",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF146",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF148",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF151",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF156",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF159",
+      "vegetarian": true,
+      "vegan": true,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF161",
+      "vegetarian": false,
+      "vegan": false,
+      "contains_pork": false
+    },
+    {
+      "food_id": "SF170",
+      "vegetarian": true,
+      "vegan": false,
+      "contains_pork": false
+    }
+  ],
+  "allergens": {
+    "SF018": [
+      "EGG"
+    ],
+    "SF022": [
+      "SHELLFISH"
+    ],
+    "SF024": [
+      "FISH"
+    ],
+    "SF035": [
+      "FISH"
+    ],
+    "SF042": [
+      "SHELLFISH"
+    ],
+    "SF052": [
+      "SHELLFISH"
+    ],
+    "SF107": [
+      "SOY"
+    ],
+    "SF109": [
+      "WHEAT"
+    ],
+    "SF129": [
+      "SOY",
+      "WHEAT"
+    ],
+    "SF131": [
+      "SHELLFISH",
+      "SOY",
+      "WHEAT"
+    ],
+    "SF156": [
+      "FISH"
+    ],
+    "SF161": [
+      "WHEAT"
+    ],
+    "SF170": [
+      "MILK"
+    ]
+  },
+  "reference_prices": [
+    {
+      "food_id": "SF107",
+      "source_item_code": "JAYA_GROCER_LO_SAM_PRESSED_TOFU_300G",
+      "source_food_name": "Lo Sam Pressed Tofu 300g",
+      "package_mass_g": "300",
+      "package_price_rm": "2.10",
+      "source_url": "https://klec.jayagrocer.com/products/lo-sam-pressed-tofu-300g"
+    },
+    {
+      "food_id": "SF068",
+      "source_item_code": "JAYA_GROCER_ECO_HARVEST_WINGED_BEAN_250G",
+      "source_food_name": "Eco Harvest Kacang Botol (Winged Bean) (Malaysia) 250g",
+      "package_mass_g": "250",
+      "package_price_rm": "4.30",
+      "source_url": "https://klec.jayagrocer.com/products/g-grower-kacang-botol-250g-mys-p10"
+    }
+  ]
+}
